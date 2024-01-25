@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+
+// icons
 import { RiArrowDropRightLine } from 'react-icons/ri';
 import { RiArrowDropLeftLine } from 'react-icons/ri';
+
 import './header.css';
 
 const Header = () => {
