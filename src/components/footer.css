@@ -17,3 +17,15 @@ footer p a {
     color: skyblue;
     text-decoration: none;
 }
+
+@media screen and (max-width: 440px) {
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    footer p {
+        font-size: 0.9rem;
+    }
+}
