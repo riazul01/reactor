@@ -7,3 +7,12 @@
     min-height: 100vh;
     overflow-x: hidden;
 }
+
+.projects {
+    margin-bottom: 3rem;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+}
