@@ -69,22 +69,7 @@ const Header = () => {
                             <span>back</span>
                         </li>
                         <li>
-                            <Link to="/link1" target="_blank">Link1</Link>
-                        </li>
-                        <li>
-                            <Link to="/link2" target="_blank">Link2</Link>
-                        </li>
-                        <li>
-                            <Link to="/link3" target="_blank">Link3</Link>
-                        </li>
-                        <li>
-                            <Link to="/link4" target="_blank">Link4</Link>
-                        </li>
-                        <li>
-                            <Link to="/link5" target="_blank">Link5</Link>
-                        </li>
-                        <li>
-                            <Link to="/link6" target="_blank">Link6</Link>
+                            <Link to="/clock" target="_blank">Digital Clock</Link>
                         </li>
                     </ul>
                 </div>
