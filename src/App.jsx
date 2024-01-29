@@ -1,13 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+// pages
 import Home from './pages/home/Home';
-import './App.css';
 import Clock from './pages/clock/Clock';
 import Stopwatch from './pages/stopwatch/Stopwatch';
 import PasswordChecker from './pages/password-checker/PasswordChecker';
 import SearchFilter from './pages/search-filter/SearchFilter';
 import FormValidator from './pages/form-validator/FormValidator';
 import TextAnalyzer from './pages/text-analyzer/TextAnalyzer';
+
+import './App.css';
 
 const App = () => {
   return (
