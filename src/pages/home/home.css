@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+
 .home {
     padding: 0 0.8rem;
     margin: 0 auto;
@@ -6,6 +8,7 @@
     max-width: 1300px;
     min-height: 100vh;
     overflow-x: hidden;
+    font-family: 'Belanosima', sans-serif;
 }
 
 .projects {
