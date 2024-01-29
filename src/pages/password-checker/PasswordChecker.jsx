@@ -85,17 +85,17 @@ const PasswordChecker = () => {
             <div className="checkBox">
                 <div className="inputField">
                     <input type={showPassword ? "text" : "password"} value={password} onChange={handleChange} placeholder="Enter your password" />
-                    {showPassword && <BsFillEyeFill className="iconEye" onClick={handleShowPassword} />}
-                    {!showPassword && <BsFillEyeSlashFill className="iconEyeSlash" onClick={handleShowPassword} />}
+                    {showPassword && password && <BsFillEyeFill className="iconEye" onClick={handleShowPassword} />}
+                    {!showPassword && password && <BsFillEyeSlashFill className="iconEyeSlash" onClick={handleShowPassword} />}
                 </div>
 
                 {password && <div className="strenghtBars">
-                    <span className="strenghtBar" style={(passwordStrength >= 1) ? {background: 'seagreen'} : {background: '#ddd'}}></span>
-                    <span className="strenghtBar" style={(passwordStrength >= 2) ? {background: 'seagreen'} : {background: '#ddd'}}></span>
-                    <span className="strenghtBar" style={(passwordStrength >= 3) ? {background: 'seagreen'} : {background: '#ddd'}}></span>
-                    <span className="strenghtBar" style={(passwordStrength >= 4) ? {background: 'seagreen'} : {background: '#ddd'}}></span>
-                    <span className="strenghtBar" style={(passwordStrength >= 5) ? {background: 'seagreen'} : {background: '#ddd'}}></span>
-                    <span className="strenghtBar" style={(passwordStrength >= 6) ? {background: 'seagreen'} : {background: '#ddd'}}></span>
+                    <span className="strenghtBar" style={(passwordStrength >= 1) ? {background: 'seagreen'} : {background: '#222'}}></span>
+                    <span className="strenghtBar" style={(passwordStrength >= 2) ? {background: 'seagreen'} : {background: '#222'}}></span>
+                    <span className="strenghtBar" style={(passwordStrength >= 3) ? {background: 'seagreen'} : {background: '#222'}}></span>
+                    <span className="strenghtBar" style={(passwordStrength >= 4) ? {background: 'seagreen'} : {background: '#222'}}></span>
+                    <span className="strenghtBar" style={(passwordStrength >= 5) ? {background: 'seagreen'} : {background: '#222'}}></span>
+                    <span className="strenghtBar" style={(passwordStrength >= 6) ? {background: 'seagreen'} : {background: '#222'}}></span>
                 </div>}
 
                 <div className="instructions">
