@@ -83,6 +83,9 @@ const Header = () => {
                         <li>
                             <Link to="/form-validator" target="_blank">Form Validator</Link>
                         </li>
+                        <li>
+                            <Link to="/text-analyzer" target="_blank">Text Analyzer</Link>
+                        </li>
                     </ul>
                 </div>
             </div>
