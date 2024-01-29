@@ -74,6 +74,12 @@ const Header = () => {
                         <li>
                             <Link to="/stopwatch" target="_blank">Stopwatch</Link>
                         </li>
+                        <li>
+                            <Link to="/password-checker" target="_blank">Password Checker</Link>
+                        </li>
+                        <li>
+                            <Link to="/search-filter-pagination" target="_blank">Search Filter & Pagination</Link>
+                        </li>
                     </ul>
                 </div>
             </div>

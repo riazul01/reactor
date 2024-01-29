@@ -4,6 +4,8 @@ import Home from './pages/home/Home';
 import './App.css';
 import Clock from './pages/clock/Clock';
 import Stopwatch from './pages/stopwatch/Stopwatch';
+import PasswordChecker from './pages/password-checker/PasswordChecker';
+import SearchFilter from './pages/search-filter/SearchFilter';
 
 const App = () => {
   return (
@@ -12,6 +14,8 @@ const App = () => {
         <Route path="/" element={<Home />}/>
         <Route path="/clock" element={<Clock />}/>
         <Route path="/stopwatch" element={<Stopwatch />}/>
+        <Route path="/password-checker" element={<PasswordChecker />}/>
+        <Route path="/search-filter-pagination" element={<SearchFilter />}/>
       </Routes>
     </BrowserRouter>
   );
