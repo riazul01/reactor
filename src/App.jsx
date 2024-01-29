@@ -6,6 +6,7 @@ import Clock from './pages/clock/Clock';
 import Stopwatch from './pages/stopwatch/Stopwatch';
 import PasswordChecker from './pages/password-checker/PasswordChecker';
 import SearchFilter from './pages/search-filter/SearchFilter';
+import FormValidator from './pages/form-validator/FormValidator';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/stopwatch" element={<Stopwatch />}/>
         <Route path="/password-checker" element={<PasswordChecker />}/>
         <Route path="/search-filter-pagination" element={<SearchFilter />}/>
+        <Route path="/form-validator" element={<FormValidator />}/>
       </Routes>
     </BrowserRouter>
   );
