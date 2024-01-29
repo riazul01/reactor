@@ -16,8 +16,8 @@ const Stopwatch = () => {
 
     const [controls, setControls] = useState({
         start: false,
-        pause: false,
-        reset: false
+        pause: true,
+        reset: true
     });
 
     // display timer
