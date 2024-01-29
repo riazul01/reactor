@@ -71,6 +71,9 @@ const Header = () => {
                         <li>
                             <Link to="/clock" target="_blank">Digital Clock</Link>
                         </li>
+                        <li>
+                            <Link to="/stopwatch" target="_blank">Stopwatch</Link>
+                        </li>
                     </ul>
                 </div>
             </div>
