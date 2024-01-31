@@ -60,6 +60,7 @@
     border-radius: 0.2rem;
     background: #069952;
     font-family: 'Rethink Sans', sans-serif;
+    transition: all 0.3s ease;
 }
 
 .controls button:disabled {
