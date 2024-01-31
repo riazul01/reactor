@@ -72,6 +72,7 @@
     cursor: pointer;
     background: #4d4df0;
     font-family: 'Questrial', sans-serif;
+    transition: all 0.3s ease;
 }
 
 .formBtn:active {
