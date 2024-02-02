@@ -41,7 +41,7 @@ const Header = () => {
 
     return (
         <div className="header">
-            <h1>React Ripples</h1>
+            <Link to="/" className="logo">React Ripples</Link>
             <div className={`toggler ${toggle ? 'active' : null}`} onClick={handleToggle}>
                 <span className="toggleBar"></span>
             </div>
