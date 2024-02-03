@@ -86,6 +86,9 @@ const Header = () => {
                         <li>
                             <Link to="/text-analyzer" target="_blank">Text Analyzer</Link>
                         </li>
+                        <li>
+                            <Link to="/recursive-partitioning" target="_blank">Recursive Partitioning</Link>
+                        </li>
                     </ul>
                 </div>
             </div>
