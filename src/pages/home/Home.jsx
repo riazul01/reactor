@@ -12,6 +12,7 @@ import PasswordCheckerThumb from '../../assets/images/password-checker_thumb.png
 import SearchFilterThumb from '../../assets/images/search-filter_thumb.png';
 import FormValidatorThumb from '../../assets/images/form-validator_thumb.png';
 import TextAnalyzerThumb from '../../assets/images/text-analyzer_thumb.png';
+import RecursivePartitioningThumb from '../../assets/images/recursive-partitioning_thumb.png';
 
 import './home.css';
 
@@ -26,6 +27,7 @@ const Home = () => {
                 <Card thumb={SearchFilterThumb} title={"Search Filter & Pagination"} path={"/search-filter-pagination"}/>
                 <Card thumb={FormValidatorThumb} title={"Form Validator"} path={"/form-validator"}/>
                 <Card thumb={TextAnalyzerThumb} title={"Text Analyzer"} path={"/text-analyzer"}/>
+                <Card thumb={RecursivePartitioningThumb} title={"Recursive Partitioning"} path={"/recursive-partitioning"}/>
             </div>
             <Footer/>
         </div>

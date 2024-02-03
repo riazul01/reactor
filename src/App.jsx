@@ -11,6 +11,7 @@ import FormValidator from './pages/form-validator/FormValidator';
 import TextAnalyzer from './pages/text-analyzer/TextAnalyzer';
 
 import './App.css';
+import RecursivePartioning from './pages/recursive-partitioning/RecursivePartioning';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/stopwatch" element={<Stopwatch />}/>
         <Route path="/password-checker" element={<PasswordChecker />}/>
         <Route path="/search-filter-pagination" element={<SearchFilter />}/>
+        <Route path="/recursive-partitioning" element={<RecursivePartioning />}/>
         <Route path="/form-validator" element={<FormValidator />}/>
         <Route path="/text-analyzer" element={<TextAnalyzer />}/>
       </Routes>
