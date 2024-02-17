@@ -78,9 +78,6 @@ const Header = () => {
                             <Link to="/password-checker" target="_blank">Password Checker</Link>
                         </li>
                         <li>
-                            <Link to="/search-filter-pagination" target="_blank">Search Filter & Pagination</Link>
-                        </li>
-                        <li>
                             <Link to="/form-validator" target="_blank">Form Validator</Link>
                         </li>
                         <li>
