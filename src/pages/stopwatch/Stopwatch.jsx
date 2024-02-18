@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './stopwatch.css';
 
 const Stopwatch = () => {
@@ -48,6 +49,7 @@ const Stopwatch = () => {
                     <button onClick={resetTimer} disabled={controls.reset} style={{background: 'steelblue'}}>Reset</button>
                 </div>
             </div>
+            <Link to="/" className="backLink">Home</Link>
         </div>
     );
 }

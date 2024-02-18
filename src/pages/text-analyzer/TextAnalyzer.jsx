@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import './text-analyzer.css';
 
 const TextAnalyzer = () => {
@@ -118,6 +119,7 @@ const TextAnalyzer = () => {
                     </p>
                 </div>
             </div>
+            <Link to="/" className="backLink">Home</Link>
         </div>
     );
 }

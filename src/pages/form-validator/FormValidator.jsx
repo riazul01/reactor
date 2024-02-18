@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './form-validator.css';
 
 const FormValidator = () => {
@@ -81,6 +82,7 @@ const FormValidator = () => {
                     <button type="submit" className="formBtn">Signup</button>
                 </form>
             </div>
+            <Link to="/" className="backLink">Home</Link>
         </div>
     );
 }

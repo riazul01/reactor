@@ -5,7 +5,7 @@ import './card.css';
 const Card = ({ thumb, title, path }) => {
     return (
         <div className="card">
-            <Link to={path} target='_blank'>
+            <Link to={path}>
                 <div className="thumb">
                     <img src={thumb} alt="project-thumb" />
                     <div className="tags">

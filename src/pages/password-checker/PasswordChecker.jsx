@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // icons
 import { FaTimesCircle } from 'react-icons/fa';
@@ -127,6 +128,7 @@ const PasswordChecker = () => {
                     </p>
                 </div>
             </div>
+            <Link to="/" className="backLink">Home</Link>
         </div>
     );
 }

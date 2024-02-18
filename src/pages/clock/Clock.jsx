@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './clock.css';
 
 const Clock = () => {
@@ -56,6 +57,7 @@ const Clock = () => {
                 <h1>{time}</h1>
                 <p>{date}</p>
             </div>
+            <Link to="/" className="backLink">Home</Link>
         </div>
     );
 }

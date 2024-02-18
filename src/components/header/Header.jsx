@@ -69,22 +69,22 @@ const Header = () => {
                             <span>back</span>
                         </li>
                         <li>
-                            <Link to="/clock" target="_blank">Digital Clock</Link>
+                            <Link to="/clock">Digital Clock</Link>
                         </li>
                         <li>
-                            <Link to="/stopwatch" target="_blank">Stopwatch</Link>
+                            <Link to="/stopwatch">Stopwatch</Link>
                         </li>
                         <li>
-                            <Link to="/password-checker" target="_blank">Password Checker</Link>
+                            <Link to="/password-checker">Password Checker</Link>
                         </li>
                         <li>
-                            <Link to="/form-validator" target="_blank">Form Validator</Link>
+                            <Link to="/form-validator">Form Validator</Link>
                         </li>
                         <li>
-                            <Link to="/text-analyzer" target="_blank">Text Analyzer</Link>
+                            <Link to="/text-analyzer">Text Analyzer</Link>
                         </li>
                         <li>
-                            <Link to="/recursive-partitioning" target="_blank">Recursive Partitioning</Link>
+                            <Link to="/recursive-partitioning">Recursive Partitioning</Link>
                         </li>
                     </ul>
                 </div>
