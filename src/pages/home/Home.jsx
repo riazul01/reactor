@@ -19,12 +19,12 @@ const Home = () => {
         <div className="home">
             <Header/>
             <div className="projects">
-                <Card thumb={ClockThumb} title={"Digital Clock"} path={"/clock"}/>
-                <Card thumb={StopwatchThumb} title={"Stopwatch"} path={"/stopwatch"}/>
-                <Card thumb={PasswordCheckerThumb} title={"Password Strength Checker"} path={"/password-checker"}/>
-                <Card thumb={FormValidatorThumb} title={"Form Validator"} path={"/form-validator"}/>
-                <Card thumb={TextAnalyzerThumb} title={"Text Analyzer"} path={"/text-analyzer"}/>
-                <Card thumb={RecursivePartitioningThumb} title={"Recursive Partitioning"} path={"/recursive-partitioning"}/>
+                <Card thumb={ClockThumb} title={"#01. Digital Clock"} path={"/clock"}/>
+                <Card thumb={StopwatchThumb} title={"#02. Stopwatch"} path={"/stopwatch"}/>
+                <Card thumb={PasswordCheckerThumb} title={"#03. Password Strength Checker"} path={"/password-checker"}/>
+                <Card thumb={FormValidatorThumb} title={"#04. Form Validator"} path={"/form-validator"}/>
+                <Card thumb={TextAnalyzerThumb} title={"#05. Text Analyzer"} path={"/text-analyzer"}/>
+                <Card thumb={RecursivePartitioningThumb} title={"#06. Recursive Partitioning"} path={"/recursive-partitioning"}/>
             </div>
             <Footer/>
         </div>
