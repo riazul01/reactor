@@ -37,10 +37,10 @@ const Stopwatch = () => {
         <div className="stopWatch">
             <div className="stopWatchContent">
                 <div className="watchBox">
-                    <p>{String(Math.floor(elapsedTime / (1000 * 60 * 60))).padStart(2, '0')}</p>
-                    <p>{String(Math.floor(elapsedTime / (1000 * 60) % 60)).padStart(2, '0')}</p>
-                    <p>{String(Math.floor(elapsedTime / 1000 % 60)).padStart(2, '0')}</p>
-                    <p>{String(Math.floor(elapsedTime % 1000)).padStart(3, '0')}</p>
+                    <p>{String(Math.floor(elapsedTime / (1000 * 60 * 60))).padStart(2, '0')}<span>hh</span></p>
+                    <p>{String(Math.floor(elapsedTime / (1000 * 60) % 60)).padStart(2, '0')}<span>mm</span></p>
+                    <p>{String(Math.floor(elapsedTime / 1000 % 60)).padStart(2, '0')}<span>ss</span></p>
+                    <p>{String(Math.floor(elapsedTime % 1000)).padStart(3, '0')}<span>ms</span></p>
                 </div>
                 <div className="controls">
                     <button onClick={startTimer} disabled={controls.start} style={{background: 'seagreen'}}>Start</button>

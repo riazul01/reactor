@@ -30,15 +30,19 @@
     justify-content: center;
 }
 
-.watchBox p {
+.watchBox > p {
     margin: 0.2rem;
     width: 120px;
     color: #fff;
     font-size: 3rem;
     font-weight: 500;
     text-align: center;
-    background: #222;
     border-radius: 0.2rem;
+}
+
+.watchBox > p > span {
+    margin-left: 0.4rem;
+    font-size: 1.3rem;
 }
 
 .controls {
@@ -53,7 +57,7 @@
     margin: 0.4rem;
     padding: 0.4rem 1rem;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 500;
     border: none;
     outline: none;
     cursor: pointer;
@@ -64,5 +68,5 @@
 }
 
 .controls button:disabled {
-    opacity: 0.7;
+    opacity: 0.8;
 }
