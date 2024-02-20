@@ -3,7 +3,6 @@ import './home.css';
 
 // components
 import Header from '../../components/header/Header';
-import Footer from '../../components/footer/Footer';
 import Card from '../../components/card/Card';
 
 // images
@@ -26,7 +25,6 @@ const Home = () => {
                 <Card thumb={TextAnalyzerThumb} title={"#05. Text Analyzer"} path={"/text-analyzer"}/>
                 <Card thumb={RecursivePartitioningThumb} title={"#06. Recursive Partitioning"} path={"/recursive-partitioning"}/>
             </div>
-            <Footer/>
         </div>
     );
 }
