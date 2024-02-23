@@ -25,6 +25,7 @@ const Home = () => {
                 <Card thumb={TextAnalyzerThumb} title={"#05. Text Analyzer"} path={"/text-analyzer"}/>
                 <Card thumb={RecursivePartitioningThumb} title={"#06. Recursive Partitioning"} path={"/recursive-partitioning"}/>
             </div>
+            <a href="https://github.com/riazul01" className="gitHubLink" target="_blank" rel="noreferrer">GitHub</a>
         </div>
     );
 }
