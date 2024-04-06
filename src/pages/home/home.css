@@ -10,12 +10,9 @@
     font-family: 'Belanosima', sans-serif;
 }
 
-.projects {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    overflow: hidden;
+.home > h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
 .projectLink {

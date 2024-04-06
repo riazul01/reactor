@@ -5,6 +5,8 @@ import './home.css';
 const Home = () => {
     return (
         <div className="home">
+            {/* https://googlefonts.github.io/noto-emoji-animation/ */}
+            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f6a9/512.gif" alt="🚩" width="42" height="42"/>
             <h1>Project List</h1>
             <Link to="/clock" className="projectLink">01. Clock</Link>
             <Link to="/stopwatch" className="projectLink">02. Stopwatch</Link>
