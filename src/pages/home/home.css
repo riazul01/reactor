@@ -1,15 +1,3 @@
-.home {
-    padding: 4rem 0.8rem;
-    margin: 0 auto;
-    color: #fff;
-    height: auto;
-    width: 100%;
-    max-width: 1300px;
-    min-height: 100vh;
-    overflow-x: hidden;
-    font-family: 'Belanosima', sans-serif;
-}
-
 .home > h1 {
     font-size: 1.6rem;
     font-weight: 600;
