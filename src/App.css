@@ -138,3 +138,7 @@ body {
 .tags span.react {
   background: #25eef8;
 }
+
+.tags span.tailwind-css {
+  background: #06b6d4;
+}
