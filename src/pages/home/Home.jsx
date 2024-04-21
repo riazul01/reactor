@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header';
 import ProjectCard from '../../components/ProjectCard';
-
 import ClockImage from '../../assets/images/clock.png';
 
 const projectData = [
@@ -23,9 +22,6 @@ const Home = () => {
                     return <ProjectCard key={project.id} data={project}/>
                 })}
             </div>
-            {/* <Link to="/clock" className="projectLink">01. Clock</Link><br/>
-            <Link to="/stopwatch" className="projectLink">02. Stopwatch</Link><br/>
-            <Link to="/recursive-partitioning" className="projectLink">03. Recursive Partitioning</Link><br/> */}
             <p className="footer">Created by <a href="https://github.com/riazul01" className="gitHubLink" target="_blank" rel="noreferrer">riazul01</a></p>
         </div>
     );

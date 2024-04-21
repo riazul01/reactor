@@ -38,7 +38,7 @@ const Header = () => {
     return (
         <div className="flex flex-row items-center justify-between h-[100px] w-full">
             {/* logo */}
-            <Link to="/" className="logo text-[#fff] text-[2.4rem] uppercase font-[700]">REACTORIUM</Link>
+            <Link to="/" className="logo text-[#fff] text-[2.4rem] uppercase font-[700]">REACTOR</Link>
 
             <div className="relative">
                 {/* toggle bar */}

@@ -59,7 +59,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  content: 'REACTORIUM';
+  content: 'REACTOR';
   background: linear-gradient(45deg, orangered, #4fc624);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
