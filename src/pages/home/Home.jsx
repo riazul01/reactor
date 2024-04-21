@@ -18,9 +18,9 @@ const Home = () => {
     return (
         <div className="mx-auto px-[0.8rem] text-[#fff] h-auto w-full max-w-[1300px] min-h-[100vh] overflow-x-hidden">
             <Header/>
-            <div className="py-[2rem] grid grid-cols-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                 {projectData.map((project) => {
-                    return <ProjectCard data={project}/>
+                    return <ProjectCard key={project.id} data={project}/>
                 })}
             </div>
             {/* <Link to="/clock" className="projectLink">01. Clock</Link><br/>
