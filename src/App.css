@@ -68,7 +68,7 @@ body {
 
 .toggleBar {
   position: relative;
-  height: 2.4px;
+  height: 3px;
   width: 32px;
   background: #fff;
   transition: all 0.3s ease;
@@ -79,7 +79,7 @@ body {
   content: '';
   top: -0.7rem;
   left: 0;
-  height: 2.4px;
+  height: 3px;
   width: 32px;
   background: #fff;
   transition: all 0.3s ease;
@@ -90,7 +90,7 @@ body {
   content: '';
   top: 0.7rem;
   left: 0;
-  height: 2.4px;
+  height: 3px;
   width: 32px;
   background: #fff;
   transition: all 0.3s ease;
