@@ -14,7 +14,7 @@ const ProjectCard = ({ data }) => {
                 </div>
             </Link>
             <div className="relative w-full h-[20%] flex items-center">
-                <Link to={data.link} className="project-title ps-[0.85rem] text-[1.2rem]" target="_blank" rel="noreferrer" title="open in a new tab">{`#${(data.id).toString().padStart(2, '0')}. ${data.name}`}</Link>
+                <Link to={data.link} className="project-title ps-[0.85rem] text-[1.2rem]" target="_blank" rel="noreferrer" title="open link in a new tab">{`#${(data.id).toString().padStart(2, '0')}. ${data.name}`}</Link>
                 <FaExternalLinkAlt className="icon-link text-[1.1rem] absolute top-[50%] right-[1rem] translate-y-[-50%] opacity-0 invisible pointer-events-none transition-all duration-300 ease-in-out"/>
             </div>
         </div>
