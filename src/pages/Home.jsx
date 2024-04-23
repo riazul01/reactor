@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from '../../components/Header';
-import ProjectCard from '../../components/ProjectCard';
-import ClockImage from '../../assets/images/clock.png';
+import Header from '../sections/Header';
+import ProjectCard from '../components/ProjectCard';
+import ClockImage from '../assets/images/clock.png';
 
-const projectData = [
+const projectItems = [
     {
         id: '1',
         name: 'Digital Clock',
@@ -30,9 +30,9 @@ const projectData = [
 const Home = () => {
     return (
         <div className="mx-auto px-[0.8rem] text-[#fff] h-auto w-full max-w-[1300px] min-h-[100vh] overflow-x-hidden" style={{fontFamily: 'Belanosima, sans-serif'}}>
-            <Header/>
+            <Header projectItems={projectItems}/>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-                {projectData.map((project) => {
+                {projectItems.map((project) => {
                     return <ProjectCard key={project.id} data={project}/>
                 })}
             </div>

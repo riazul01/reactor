@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 // pages
-import Home from './pages/home/Home';
+import Home from './pages/Home';
 import Clock from './pages/clock/Clock';
 import Stopwatch from './pages/stopwatch/Stopwatch';
 import RecursivePartioning from './pages/recursive-partitioning/RecursivePartioning';
