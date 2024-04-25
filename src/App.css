@@ -27,16 +27,6 @@ body {
   background-position: center;
 }
 
-.backLink {
-  position: fixed;
-  bottom: 3rem;
-  left: 5%;
-  color: #555;
-  font-size: 1.2rem;
-  font-weight: 500;
-  text-decoration: underline;
-}
-
 .logo {
   margin-left: 0.4rem;
   position: relative;
@@ -134,4 +124,11 @@ body {
 
 .tags span.tailwind-css {
   background: #06b6d4;
+}
+
+.clock-bg {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('./assets/images/clock-bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
