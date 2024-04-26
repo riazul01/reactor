@@ -4,8 +4,8 @@ import './App.css';
 
 // pages
 import Home from './pages/Home';
-import Clock from './pages/clock/Clock';
-import Stopwatch from './pages/stopwatch/Stopwatch';
+import Clock from './pages/projects/Clock';
+import Stopwatch from './pages/projects/Stopwatch';
 import RecursivePartioning from './pages/recursive-partitioning/RecursivePartioning';
 
 const App = () => {

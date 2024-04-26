@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../sections/Header';
 import ProjectCard from '../components/ProjectCard';
 import ClockImage from '../assets/images/clock.png';
+import StopwatchImage from '../assets/images/stopwatch.png';
 
 const projectItems = [
     {
@@ -14,7 +15,7 @@ const projectItems = [
     {
         id: '2',
         name: 'StopWatch',
-        image: ClockImage,
+        image: StopwatchImage,
         tags: ['react', 'tailwind-css'],
         link: '/stopwatch'
     },
