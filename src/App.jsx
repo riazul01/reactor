@@ -6,16 +6,16 @@ import './App.css';
 import Home from './pages/Home';
 import Clock from './pages/projects/Clock';
 import Stopwatch from './pages/projects/Stopwatch';
-import RecursivePartioning from './pages/recursive-partitioning/RecursivePartioning';
+import SplitScreen from './pages/projects/split-screen';
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/clock" element={<Clock />}/>
-        <Route path="/stopwatch" element={<Stopwatch />}/>
-        <Route path="/recursive-partitioning" element={<RecursivePartioning />}/>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/clock" element={<Clock/>}/>
+        <Route path="/stopwatch" element={<Stopwatch/>}/>
+        <Route path="/split-screen" element={<SplitScreen/>}/>
       </Routes>
     </BrowserRouter>
   );

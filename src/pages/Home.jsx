@@ -3,6 +3,7 @@ import Header from '../sections/Header';
 import ProjectCard from '../components/ProjectCard';
 import ClockImage from '../assets/images/clock.png';
 import StopwatchImage from '../assets/images/stopwatch.png';
+import SplitScreenImage from '../assets/images/split-screen.png';
 
 const projectItems = [
     {
@@ -21,10 +22,10 @@ const projectItems = [
     },
     {
         id: '3',
-        name: 'Recursive Partitioning',
-        image: ClockImage,
+        name: 'Split Screen',
+        image: SplitScreenImage,
         tags: ['react', 'tailwind-css'],
-        link: '/recursive-partitioning'
+        link: '/split-screen'
     }
 ];
 
