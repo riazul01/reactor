@@ -1,9 +1,10 @@
 import React from 'react';
-import Header from '../sections/Header';
-import ProjectCard from '../components/ProjectCard';
-import ClockImage from '../assets/images/clock.png';
-import StopwatchImage from '../assets/images/stopwatch.png';
-import SplitScreenImage from '../assets/images/split-screen.png';
+import Header from './Header';
+import ProjectCard from './ProjectCard';
+
+import ClockImage from '../../assets/images/thumbs/clock.png';
+import StopwatchImage from '../../assets/images/thumbs/stopwatch.png';
+import SplitScreenImage from '../../assets/images/thumbs/split-screen.png';
 
 const projectItems = [
     {
@@ -38,7 +39,7 @@ const Home = () => {
                     return <ProjectCard key={project.id} data={project}/>
                 })}
             </div>
-            <p className="footer">Created by <a href="https://github.com/riazul01" className="gitHubLink" target="_blank" rel="noreferrer">riazul01</a></p>
+            <p className="fixed bottom-[2rem] left-[2rem] text-[1.1rem] text-[#666]">Created by <a href="https://github.com/riazul01" className="text-[tomato] underline opacity-60" target="_blank" rel="noreferrer">riazul01</a></p>
         </div>
     );
 }

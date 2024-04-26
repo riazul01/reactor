@@ -127,7 +127,7 @@ body {
 }
 
 .clock-bg {
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('./assets/images/clock-bg.jpg');
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('./assets/images/backgrounds/clock-bg.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
