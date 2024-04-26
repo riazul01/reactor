@@ -2,9 +2,9 @@ import React from 'react';
 import Header from './Header';
 import ProjectCard from './ProjectCard';
 
-import ClockImage from '../../assets/images/thumbs/clock.png';
-import StopwatchImage from '../../assets/images/thumbs/stopwatch.png';
-import SplitScreenImage from '../../assets/images/thumbs/split-screen.png';
+import ClockImage from 'src/assets/images/thumbs/clock.png';
+import StopwatchImage from 'src/assets/images/thumbs/stopwatch.png';
+import SplitScreenImage from 'src/assets/images/thumbs/split-screen.png';
 
 const projectItems = [
     {
