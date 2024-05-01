@@ -126,8 +126,8 @@ body {
   background: #06b6d4;
 }
 
-.clock-bg {
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('./assets/images/backgrounds/clock-bg.jpg');
+.stopwatch-bg {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('./assets/images/backgrounds/stopwatch-bg.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

@@ -34,8 +34,8 @@ const Stopwatch = () => {
     }
 
     return (
-        <div className="h-[100vh] w-full flex items-center justify-center" style={{fontFamily: 'Rethink Sans, sans-serif'}}>
-            <div className="mx-[0.6rem] my-0 p-[1rem] w-auto h-auto flex flex-col items-center justify-center border-[4px] border-[#222] rounded-[2rem]">
+        <div className="stopwatch-bg h-[100vh] w-full flex items-center justify-center" style={{fontFamily: 'Rethink Sans, sans-serif'}}>
+            <div className="mx-[0.6rem] my-0 p-[1rem] w-auto h-auto flex flex-col items-center justify-center bg-[#000] bg-opacity-50 rounded-[2rem]">
                 <div className="px-0 py-[1.2rem] flex flex-wrap items-center justify-center">
                     <p className="m-[0.2rem] w-[120px] text-[#fff] text-[3rem] text-center font-[500] rounded-[0.2rem]">
                         {String(Math.floor(elapsedTime / (1000 * 60 * 60))).padStart(2, '0')}
