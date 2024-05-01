@@ -7,6 +7,7 @@ import Home from './pages/home';
 import Clock from './pages/projects/Clock';
 import Stopwatch from './pages/projects/Stopwatch';
 import SplitScreen from './pages/projects/split-screen';
+import Todo from './pages/projects/Todo';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/clock" element={<Clock/>}/>
         <Route path="/stopwatch" element={<Stopwatch/>}/>
         <Route path="/split-screen" element={<SplitScreen/>}/>
+        <Route path="/todo" element={<Todo/>}/>
       </Routes>
     </BrowserRouter>
   );
