@@ -125,10 +125,3 @@ body {
 .tags span.tailwind-css {
   background: #06b6d4;
 }
-
-.stopwatch-bg {
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('./assets/images/backgrounds/stopwatch-bg.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-}
