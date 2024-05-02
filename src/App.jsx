@@ -7,6 +7,7 @@ import Home from './pages/home';
 import Clock from './pages/projects/Clock';
 import Stopwatch from './pages/projects/Stopwatch';
 import SplitScreen from './pages/projects/split-screen';
+import Counter from './pages/projects/counter';
 import Todo from './pages/projects/Todo';
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/stopwatch" element={<Stopwatch/>}/>
         <Route path="/split-screen" element={<SplitScreen/>}/>
         <Route path="/todo" element={<Todo/>}/>
+        <Route path="/counter" element={<Counter/>}/>
       </Routes>
     </BrowserRouter>
   );
