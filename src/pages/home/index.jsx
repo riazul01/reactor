@@ -5,28 +5,36 @@ import ProjectCard from './ProjectCard';
 import ClockImage from 'src/assets/images/thumbs/clock.png';
 import StopwatchImage from 'src/assets/images/thumbs/stopwatch.png';
 import SplitScreenImage from 'src/assets/images/thumbs/split-screen.png';
+import TodoImage from 'src/assets/images/thumbs/todo.png';
 
 const projectItems = [
     {
-        id: '1',
+        id: 1,
         name: 'Digital Clock',
         image: ClockImage,
         tags: ['react', 'tailwind-css'],
         link: '/clock'
     },
     {
-        id: '2',
+        id: 2,
         name: 'StopWatch',
         image: StopwatchImage,
         tags: ['react', 'tailwind-css'],
         link: '/stopwatch'
     },
     {
-        id: '3',
+        id: 3,
         name: 'Split Screen',
         image: SplitScreenImage,
         tags: ['react', 'tailwind-css'],
         link: '/split-screen'
+    },
+    {
+        id: 4,
+        name: 'Todo App',
+        image: TodoImage,
+        tags: ['react', 'tailwind-css'],
+        link: '/todo'
     }
 ];
 
