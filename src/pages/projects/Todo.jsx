@@ -51,21 +51,21 @@ const Todo = () => {
     }
 
     return (
-        <div className="px-[0.4rem] py-[10rem] text-[#fff] h-[100vh] w-full bg-[#111]">
+        <div className="px-[0.4rem] py-[8rem] text-[#fff] h-[100vh] w-full todo-bg">
             <div className="mx-auto w-full max-w-[500px]">
                 <form onSubmit={handleSubmit} className="flex gap-[1rem]">
-                    <input value={task.task} onChange={handleChange} name="task" type="text" placeholder="Enter task" className="px-[0.8rem] py-[0.4rem] text-[1.1rem] border-none outline-none rounded-md bg-[#222]"/>
-                    <select value={task.status} onChange={handleChange} name="status" className="px-[0.8rem] py-[0.4rem] text-[1.1rem] border-none outline-none rounded-md bg-[#222]">
+                    <input value={task.task} onChange={handleChange} name="task" type="text" placeholder="Enter task" className="px-[0.8rem] py-[0.4rem] text-[1.1rem] border-none outline-none bg-[#000] bg-opacity-60 rounded-md"/>
+                    <select value={task.status} onChange={handleChange} name="status" className="px-[0.8rem] py-[0.4rem] text-[1.1rem] border-none outline-none bg-[#000] rounded-md">
                         <option value="active">Active</option>
                         <option value="completed">Completed</option>
                     </select>
-                    <button type="submit" className="px-[0.8rem] rounded-md bg-[seagreen]">{edit.status ? 'Update' : 'Submit'}</button>
+                    <button type="submit" className="px-[0.8rem] bg-[seagreen] border-none outline-none rounded-md">{edit.status ? 'Update' : 'Submit'}</button>
                 </form>
 
                 <div className="mt-[2rem] flex items-center gap-[0.6rem]">
-                    <button onClick={() => setShow('all')} className={`px-[0.8rem] py-[0.4rem] rounded-md ${show === 'all' ? 'bg-[seagreen]' : 'bg-[#222]'}`}>All</button>
-                    <button onClick={() => setShow('active')} className={`px-[0.8rem] py-[0.4rem] rounded-md ${show === 'active' ? 'bg-[seagreen]' : 'bg-[#222]'}`}>Active</button>
-                    <button onClick={() => setShow('completed')} className={`px-[0.8rem] py-[0.4rem] rounded-md ${show === 'completed' ? 'bg-[seagreen]' : 'bg-[#222]'}`}>Completed</button>
+                    <button onClick={() => setShow('all')} className={`px-[0.8rem] py-[0.4rem] ${show === 'all' ? 'bg-[seagreen] hover:bg-[seagreen]' : 'bg-[#000] bg-opacity-60 hover:bg-opacity-100'} transition-all ease-in-out duration-300 rounded-md`}>All</button>
+                    <button onClick={() => setShow('active')} className={`px-[0.8rem] py-[0.4rem] ${show === 'active' ? 'bg-[seagreen] hover:bg-[seagreen]' : 'bg-[#000] bg-opacity-60 hover:bg-opacity-100'} transition-all ease-in-out duration-300 rounded-md`}>Active</button>
+                    <button onClick={() => setShow('completed')} className={`px-[0.8rem] py-[0.4rem] ${show === 'completed' ? 'bg-[seagreen] hover:bg-[seagreen]' : 'bg-[#000] bg-opacity-60 hover:bg-opacity-100'} transition-all ease-in-out duration-300 rounded-md`}>Completed</button>
                 </div>
 
                 <div className="mt-[1.6rem]">
