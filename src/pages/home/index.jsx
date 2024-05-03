@@ -24,17 +24,17 @@ const projectItems = [
     },
     {
         id: 3,
-        name: 'Split Screen',
-        image: SplitScreenImage,
-        tags: ['react', 'tailwind-css'],
-        link: '/split-screen'
-    },
-    {
-        id: 4,
         name: 'Todo App',
         image: TodoImage,
         tags: ['react', 'tailwind-css'],
         link: '/todo'
+    },
+    {
+        id: 10,
+        name: 'Split Screen',
+        image: SplitScreenImage,
+        tags: ['react', 'tailwind-css'],
+        link: '/split-screen'
     }
 ];
 
