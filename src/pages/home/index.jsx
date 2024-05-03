@@ -30,6 +30,13 @@ const projectItems = [
         link: '/todo'
     },
     {
+        id: 4,
+        name: 'Counter',
+        image: TodoImage,
+        tags: ['react', 'tailwind-css'],
+        link: '/counter'
+    },
+    {
         id: 10,
         name: 'Split Screen',
         image: SplitScreenImage,

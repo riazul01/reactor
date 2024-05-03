@@ -144,3 +144,9 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+
+/* .counter-bg {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('./assets/images/backgrounds/counter.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+} */
