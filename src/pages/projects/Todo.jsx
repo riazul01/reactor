@@ -51,7 +51,7 @@ const Todo = () => {
     }
 
     return (
-        <div className="px-[0.4rem] py-[8rem] text-[#fff] h-[100vh] w-full todo-bg bg-cover bg-fixed">
+        <div className="px-[0.4rem] py-[8rem] text-[#fff] w-full h-auto min-h-[100vh] todo-bg bg-cover bg-fixed">
             <div className="mx-auto w-full max-w-[500px]">
                 <form onSubmit={handleSubmit} className="flex gap-[1rem]">
                     <input value={task.task} onChange={handleChange} name="task" type="text" placeholder="Enter task" className="px-[0.8rem] py-[0.4rem] text-[1.1rem] border-none outline-none bg-[#000] bg-opacity-60 rounded-md"/>
