@@ -6,6 +6,7 @@ import ClockImage from 'src/assets/images/thumbs/clock.png';
 import StopwatchImage from 'src/assets/images/thumbs/stopwatch.png';
 import SplitScreenImage from 'src/assets/images/thumbs/split-screen.png';
 import TodoImage from 'src/assets/images/thumbs/todo.png';
+import CounterImage from '/src/assets/images/thumbs/counter.png';
 
 const projectItems = [
     {
@@ -32,7 +33,7 @@ const projectItems = [
     {
         id: 4,
         name: 'Counter',
-        image: TodoImage,
+        image: CounterImage,
         tags: ['react', 'tailwindCSS'],
         link: '/counter'
     },

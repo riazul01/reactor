@@ -25,7 +25,7 @@ const RandomColors = () => {
     }
 
     return (
-        <div className="px-[0.4rem] py-[3rem] w-full h-auto min-h-[100vh] bg-[#000]" style={{fontFamily: "'Exo 2', sans-serif"}}>
+        <div className="px-[0.4rem] pt-[7rem] w-full h-[100vh] bg-[#000]" style={{fontFamily: "'Exo 2', sans-serif"}}>
             <div className="mx-auto h-auto w-[400px]">
                 <h1 className="pb-[1rem] text-[1.3rem] font-[600] cursor-default underline" style={{color: colorData.color}}>Random colors</h1>
                 <div className={`h-[240px] w-full rounded-md`} style={{background: colorData.color}}></div>
