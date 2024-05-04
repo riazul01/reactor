@@ -7,6 +7,7 @@ import StopwatchImage from 'src/assets/images/thumbs/stopwatch.png';
 import SplitScreenImage from 'src/assets/images/thumbs/split-screen.png';
 import TodoImage from 'src/assets/images/thumbs/todo.png';
 import CounterImage from '/src/assets/images/thumbs/counter.png';
+import RandomColorsImage from '/src/assets/images/thumbs/random-colors.png';
 
 const projectItems = [
     {
@@ -36,6 +37,13 @@ const projectItems = [
         image: CounterImage,
         tags: ['react', 'tailwindCSS'],
         link: '/counter'
+    },
+    {
+        id: 5,
+        name: 'Random Colors',
+        image: RandomColorsImage,
+        tags: ['react', 'tailwindCSS'],
+        link: '/random-colors'
     },
     {
         id: 10,
