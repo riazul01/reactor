@@ -32,7 +32,7 @@ const Stopwatch = () => {
     }
 
     return (
-        <div className="h-[100vh] w-full flex items-center justify-center bg-[#1e2b3b] stopwatch-bg" style={{fontFamily: 'Rethink Sans, sans-serif'}}>
+        <div className="h-[100vh] w-full flex items-center justify-center stopwatch-bg bg-cover bg-fixed" style={{fontFamily: 'Rethink Sans, sans-serif'}}>
             <div className="mx-[0.6rem] my-0 p-[1rem] w-auto h-auto flex flex-col items-center justify-center bg-[#000] bg-opacity-30 backdrop-blur rounded-[2rem]">
                 <div className="px-0 py-[1.2rem] flex flex-wrap items-center justify-center">
                     <p className="m-[0.2rem] w-[120px] text-[#fff] text-[3rem] text-center font-[500] rounded-[0.2rem]">

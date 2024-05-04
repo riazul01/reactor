@@ -12,35 +12,35 @@ const projectItems = [
         id: 1,
         name: 'Digital Clock',
         image: ClockImage,
-        tags: ['react', 'tailwind-css'],
+        tags: ['react', 'tailwindCSS'],
         link: '/clock'
     },
     {
         id: 2,
         name: 'StopWatch',
         image: StopwatchImage,
-        tags: ['react', 'tailwind-css'],
+        tags: ['react', 'tailwindCSS'],
         link: '/stopwatch'
     },
     {
         id: 3,
         name: 'Todo App',
         image: TodoImage,
-        tags: ['react', 'tailwind-css'],
+        tags: ['react', 'tailwindCSS'],
         link: '/todo'
     },
     {
         id: 4,
         name: 'Counter',
         image: TodoImage,
-        tags: ['react', 'tailwind-css'],
+        tags: ['react', 'tailwindCSS'],
         link: '/counter'
     },
     {
         id: 10,
         name: 'Split Screen',
         image: SplitScreenImage,
-        tags: ['react', 'tailwind-css'],
+        tags: ['react', 'tailwindCSS'],
         link: '/split-screen'
     }
 ];
