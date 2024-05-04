@@ -21,7 +21,7 @@ const App = () => {
         <Route path="/split-screen" element={<SplitScreen/>}/>
         <Route path="/todo" element={<Todo/>}/>
         <Route path="/counter" element={<Counter/>}/>
-        <Route path="/colors" element={<RandomColors/>}/>
+        <Route path="/random-colors" element={<RandomColors/>}/>
       </Routes>
     </BrowserRouter>
   );

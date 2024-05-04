@@ -31,12 +31,6 @@ body {
 }
 
 .logo {
-  margin-left: 0.4rem;
-  position: relative;
-  color: #fff;
-  font-size: 2.4rem;
-  font-weight: bold;
-  text-decoration: none;
   -webkit-text-stroke: 2px #111;
 }
 
@@ -51,14 +45,6 @@ body {
   -webkit-text-fill-color: transparent;
   transform: scale(1.1, 1.15);
   z-index: -1;
-}
-
-.toggleBar {
-  position: relative;
-  height: 3px;
-  width: 32px;
-  background: #fff;
-  transition: all 0.3s ease;
 }
 
 .toggleBar::before {

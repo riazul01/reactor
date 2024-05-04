@@ -37,11 +37,11 @@ const Header = ({ projectItems }) => {
     return (
         <div className="relative flex flex-row items-center justify-between h-[100px] w-full">
             {/* logo */}
-            <Link to="/" className="logo text-[#fff] text-[2.4rem] uppercase font-[700]">REACTOR</Link>
+            <Link to="/" className="logo ml-[0.4rem] relative text-[#fff] text-[2.4rem] font-[700] uppercase no-underline">REACTOR</Link>
 
             {/* toggle bar */}
             <div onClick={handleNavToggle} className={`toggler ${toggle ? 'active' : null} h-[46px] w-[54px] grid place-items-center cursor-pointer rounded-lg`}>
-                <span className="toggleBar"></span>
+                <span className="toggleBar relative h-[3px] w-[32px] bg-[#fff] transition-all duration-300 ease-in-out"></span>
             </div>
 
             {/* navigation */}
