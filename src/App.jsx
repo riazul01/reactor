@@ -10,6 +10,7 @@ import SplitScreen from './pages/projects/split-screen';
 import Counter from './pages/projects/counter';
 import Todo from './pages/projects/Todo';
 import RandomColors from './pages/projects/random-colors';
+import PxToREM from './pages/PxToREM';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/todo" element={<Todo/>}/>
         <Route path="/counter" element={<Counter/>}/>
         <Route path="/random-colors" element={<RandomColors/>}/>
+        <Route path="/px-to-rem" element={<PxToREM/>}/>
       </Routes>
     </BrowserRouter>
   );
