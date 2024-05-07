@@ -8,6 +8,7 @@ import SplitScreenImage from 'src/assets/images/thumbs/split-screen.png';
 import TodoImage from 'src/assets/images/thumbs/todo.png';
 import CounterImage from '/src/assets/images/thumbs/counter.png';
 import RandomColorsImage from '/src/assets/images/thumbs/random-colors.png';
+import PxToRemImage from '/src/assets/images/thumbs/px-to-rem.png';
 
 const projectItems = [
     {
@@ -44,6 +45,13 @@ const projectItems = [
         image: RandomColorsImage,
         tags: ['react', 'tailwindCSS'],
         link: '/random-colors'
+    },
+    {
+        id: 6,
+        name: 'Px to REM Converter',
+        image: PxToRemImage,
+        tags: ['react', 'tailwindCSS'],
+        link: '/px-to-rem'
     },
     {
         id: 10,
