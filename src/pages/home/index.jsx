@@ -9,6 +9,7 @@ import TodoImage from 'src/assets/images/thumbs/todo.png';
 import CounterImage from '/src/assets/images/thumbs/counter.png';
 import RandomColorsImage from '/src/assets/images/thumbs/random-colors.png';
 import PxToRemImage from '/src/assets/images/thumbs/px-to-rem.png';
+import Footer from './Footer';
 
 const projectItems = [
     {
@@ -71,7 +72,7 @@ const Home = () => {
                     return <ProjectCard key={project.id} data={project}/>
                 })}
             </div>
-            <p className="fixed bottom-[2rem] left-[2rem] text-[1.1rem] text-[#666]">Created by <a href="https://github.com/riazul01" className="text-[tomato] underline opacity-60" target="_blank" rel="noreferrer">riazul01</a></p>
+            <Footer/>
         </div>
     );
 }
