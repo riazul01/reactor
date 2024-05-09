@@ -11,6 +11,7 @@ import Counter from './pages/projects/counter';
 import Todo from './pages/projects/Todo';
 import RandomColors from './pages/projects/random-colors';
 import PxToREM from './pages/PxToREM';
+import AgeCalculator from './pages/projects/AgeCalculator';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/counter" element={<Counter/>}/>
         <Route path="/random-colors" element={<RandomColors/>}/>
         <Route path="/px-to-rem" element={<PxToREM/>}/>
+        <Route path="/age-calculator" element={<AgeCalculator/>}/>
       </Routes>
     </BrowserRouter>
   );
