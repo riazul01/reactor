@@ -3,7 +3,14 @@ import React, { useState, useEffect } from 'react';
 const AgeCalculator = () => {
     const [dob, setDOB] = useState('');
     const [ageAtDate, setAgeAtDate] = useState('');
-    const [age, setAge] = useState('');
+    const [ageByYears, setAgeByYears] = useState('');
+    const [ageByMonths, setAgeByMonths] = useState('');
+    const [ageByWeeks, setAgeByWeeks] = useState('');
+    const [ageByDays, setAgeByDays] = useState('');
+    const [ageByHours, setAgeByHours] = useState('');
+    const [ageByMinutes, setAgeByMinutes] = useState('');
+    const [ageBySeconds, setAgeBySeconds] = useState('');
+    const dayConst = 86400;
 
     useEffect(() => {
         const currentDate = new Date();
@@ -24,6 +31,54 @@ const AgeCalculator = () => {
         }
     }
 
+    const calculateByYears = (totalSeconds) => {
+        const years = Math.floor(totalSeconds / (dayConst * 365));
+        totalSeconds = totalSeconds % (dayConst * 365);
+
+        const months = Math.floor(totalSeconds / (dayConst * 30.44));
+        totalSeconds = totalSeconds % (dayConst * 30.44);
+
+        const days = Math.floor(totalSeconds / dayConst);
+        totalSeconds = totalSeconds % dayConst;
+
+        setAgeByYears(`${years} years, ${months} months, ${days} days`);
+    }
+
+    const calculateByMonths = (totalSeconds) => {
+        const months = Math.floor(totalSeconds / (dayConst * 30.44));
+        totalSeconds = totalSeconds % (dayConst * 30.44);
+
+        const days = Math.floor(totalSeconds / dayConst);
+        totalSeconds = totalSeconds % dayConst;
+
+        setAgeByMonths(`${months} months, ${days} days`);
+    }
+
+    const calculateByWeeks = (totalSeconds) => {
+        const weeks = Math.floor(totalSeconds / (dayConst * 7));
+        totalSeconds = totalSeconds % (dayConst * 7);
+
+        const days = Math.floor(totalSeconds / dayConst);
+        totalSeconds = totalSeconds % dayConst;
+
+        setAgeByWeeks(`${weeks} weeks, ${days} days`);
+    }
+
+    const calculateByDays = (totalSeconds) => {
+        const days = Math.floor(totalSeconds / dayConst);
+        setAgeByDays(`${days} days`);
+    }
+
+    const calculateByHours = (totalSeconds) => {
+        const hours = Math.floor(totalSeconds / (60 * 60));
+        setAgeByHours(`${hours} hours`);
+    }
+
+    const calculateByMinutes = (totalSeconds) => {
+        const minutes = Math.floor(totalSeconds / 60);
+        setAgeByMinutes(`${minutes} minutes`);
+    }
+
     const handleCalculateAge = (e) => {
         e.preventDefault();
         const dobDate = new Date(dob);
@@ -31,19 +86,15 @@ const AgeCalculator = () => {
     
         if (!isNaN(dobDate.getTime()) && !isNaN(ageAtDateDate.getTime())) {
             const diffTime = Math.abs(ageAtDateDate - dobDate);
-            let totalSeconds = Math.ceil(diffTime / 1000);
+            const totalSeconds = Math.ceil(diffTime / 1000);
+            setAgeBySeconds(`${totalSeconds} Seconds`);
 
-            let dayConst = 86400;
-            let hourConst = 3600;
-            let minuteConst = 60;
-
-            let years = Math.floor(totalSeconds / (dayConst * 365));
-            totalSeconds = totalSeconds % (dayConst * 365);
-
-            let days = Math.floor(totalSeconds / dayConst);
-            totalSeconds = totalSeconds % dayConst;
-
-            setAge(`${years}years, ${days}days`);
+            calculateByYears(totalSeconds);
+            calculateByMonths(totalSeconds);
+            calculateByWeeks(totalSeconds);
+            calculateByDays(totalSeconds);
+            calculateByHours(totalSeconds);
+            calculateByMinutes(totalSeconds);
         } else {
             alert('Please enter valid dates!');
         }
@@ -51,8 +102,8 @@ const AgeCalculator = () => {
 
     return (
         <div className="px-[0.4rem] py-[3rem] w-full h-auto min-h-[100vh] bg-[#151515]" style={{fontFamily: '"DM Mono", monospace'}}>
-            <div className="mx-auto w-full max-w-[900px] bg-red-300">
-                <form onSubmit={handleCalculateAge} className="h-[100px] flex flex-row items-end justify-center gap-[0.6rem]">
+            <div className="mx-auto w-full max-w-[700px]">
+                <form onSubmit={handleCalculateAge} className="h-[100px] flex flex-row items-end justify-start gap-[0.6rem]">
                     <div className="flex flex-col gap-[0.4rem]">
                         <label htmlFor="birth-date" className="text-[#aaa] text-[1.2rem] font-[500]">Date of Birth:</label>
                         <input value={dob} onChange={(e) => handleInputChange(e, 'dob')} id="birth-date" type="date" className="text-[#fff] text-[1.1rem] bg-[#212121] px-[0.8rem] py-[0.4rem] w-[280px] border-none outline-none rounded-md"/>
@@ -63,7 +114,17 @@ const AgeCalculator = () => {
                     </div>
                     <button className="px-[0.8rem] text-[#fff] text-[1.1rem] font-[500] h-[42px] bg-[seagreen] rounded-md">Calculate</button>
                 </form>
-                <p>Result: {age}</p>
+
+                <div className="mt-[2rem]">
+                    <p className="text-[#aaa] text-[1.2rem] font-[500]">Result:</p>
+                    <p className="mt-[1rem] text-[#fff] text-[1.2rem]">{ageByYears}</p>
+                    <p className="mt-[1rem] text-[#fff] text-[1.2rem]">{ageByMonths}</p>
+                    <p className="mt-[1rem] text-[#fff] text-[1.2rem]">{ageByWeeks}</p>
+                    <p className="mt-[1rem] text-[#fff] text-[1.2rem]">{ageByDays}</p>
+                    <p className="mt-[1rem] text-[#fff] text-[1.2rem]">{ageByHours}</p>
+                    <p className="mt-[1rem] text-[#fff] text-[1.2rem]">{ageByMinutes}</p>
+                    <p className="mt-[1rem] text-[#fff] text-[1.2rem]">{ageBySeconds}</p>
+                </div>
             </div>
         </div>
     );

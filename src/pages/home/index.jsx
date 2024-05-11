@@ -9,6 +9,7 @@ import TodoImage from 'src/assets/images/thumbs/todo.png';
 import CounterImage from '/src/assets/images/thumbs/counter.png';
 import RandomColorsImage from '/src/assets/images/thumbs/random-colors.png';
 import PxToRemImage from '/src/assets/images/thumbs/px-to-rem.png';
+import AgeCalculatorImage from '/src/assets/images/thumbs/age-calculator.png';
 import Footer from './Footer';
 
 const projectItems = [
@@ -53,6 +54,13 @@ const projectItems = [
         image: PxToRemImage,
         tags: ['react', 'tailwindCSS'],
         link: '/px-to-rem'
+    },
+    {
+        id: 7,
+        name: 'Age Calculator',
+        image: AgeCalculatorImage,
+        tags: ['react', 'tailwindCSS'],
+        link: '/age-calculator'
     },
     {
         id: 10,
