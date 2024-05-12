@@ -10,6 +10,7 @@ import CounterImage from '/src/assets/images/thumbs/counter.png';
 import RandomColorsImage from '/src/assets/images/thumbs/random-colors.png';
 import PxToRemImage from '/src/assets/images/thumbs/px-to-rem.png';
 import AgeCalculatorImage from '/src/assets/images/thumbs/age-calculator.png';
+import PasswordGeneratorImage from '/src/assets/images/thumbs/password-generator.png';
 import Footer from './Footer';
 
 const projectItems = [
@@ -61,6 +62,13 @@ const projectItems = [
         image: AgeCalculatorImage,
         tags: ['react', 'tailwindCSS'],
         link: '/age-calculator'
+    },
+    {
+        id: 8,
+        name: 'Random Password Generator',
+        image: PasswordGeneratorImage,
+        tags: ['react', 'tailwindCSS'],
+        link: '/random-password-generator'
     },
     {
         id: 10,
