@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 const Clock = () => {
     const [time, setTime] = useState('00:00:00 XM');
@@ -51,12 +50,9 @@ const Clock = () => {
     }, [time, date]);
 
     return (
-        <div className="mx-auto flex items-center justify-center h-[100vh] w-full clock-bg bg-cover bg-fixed" style={{fontFamily: 'IBM Plex Mono, monospace'}}>
-            <div className="p-[1rem]">
-                <h1 className="text-[#fff] text-[5rem] text-center font-[300] drop-shadow-lg">{time}</h1>
-                <p className="mt-[1rem] text-[#fff] text-[2.4rem] font-[300] text-center drop-shadow-lg">{date}</p>
-            </div>
-            <Link to="/" className="fixed bottom-[3rem] left-[5%] text-[#ccc] text-[1.2rem] font-[400] underline">Home</Link>
+        <div className="mx-auto font-mono flex flex-col items-center justify-center gap-[1rem] h-[100vh] w-full clock-bg bg-cover bg-fixed">
+            <h1 className="text-[#fff] text-[5rem] text-center font-[300] drop-shadow-lg">{time}</h1>
+            <p className="text-[#fff] text-[2.4rem] font-[300] text-center drop-shadow-lg">{date}</p>
         </div>
     );
 }

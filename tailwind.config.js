@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      mono: ['IBM Plex Mono', 'monospace']
+    }
   },
   plugins: [],
 }
