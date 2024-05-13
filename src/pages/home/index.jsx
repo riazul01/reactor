@@ -11,6 +11,9 @@ import RandomColorsImage from '/src/assets/images/thumbs/random-colors.png';
 import PxToRemImage from '/src/assets/images/thumbs/px-to-rem.png';
 import AgeCalculatorImage from '/src/assets/images/thumbs/age-calculator.png';
 import PasswordGeneratorImage from '/src/assets/images/thumbs/password-generator.png';
+import ContactListImage from '/src/assets/images/thumbs/contact-list.png';
+import RotationCounterImage from '/src/assets/images/thumbs/rotation-counter.png';
+import MultiplicationTableImage from '/src/assets/images/thumbs/multiplication-table.png';
 import Footer from './Footer';
 
 const projectItems = [
@@ -71,7 +74,28 @@ const projectItems = [
         link: '/random-password-generator'
     },
     {
+        id: 9,
+        name: 'Contact List',
+        image: ContactListImage,
+        tags: ['react', 'tailwindCSS'],
+        link: '/contact-list'
+    },
+    {
         id: 10,
+        name: 'Rotation Counter',
+        image: RotationCounterImage,
+        tags: ['react', 'tailwindCSS'],
+        link: '/rotation-counter'
+    },
+    {
+        id: 11,
+        name: 'Multiplication Table Generator',
+        image: MultiplicationTableImage,
+        tags: ['react', 'tailwindCSS'],
+        link: '/multiplication-table-generator'
+    },
+    {
+        id: 12,
         name: 'Split Screen',
         image: SplitScreenImage,
         tags: ['react', 'tailwindCSS'],
