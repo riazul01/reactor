@@ -9,7 +9,7 @@ export default {
     fontFamily: {
       mono: ['IBM Plex Mono', 'monospace'],
       sans: ['Rethink Sans', 'sans-serif'],
-      nunito: ['Nunito Sans', 'sans-serif']
+      wix: ['Wix Madefor Display', 'sans-serif']
     }
   },
   plugins: [],
