@@ -1,14 +1,14 @@
-import React, { useCallback, useEffect, useRef } from 'react';
-import { tailwindColors, tailwindColorsShades } from './colors';
+import React, { useRef } from 'react';
+import { colors, colorsShades } from './colors';
 
 const MultiplyTable = ({ tableNo }) => {
     const table = useRef([]);
 
-    const colorIndex = Math.floor(Math.random() * tailwindColors.length);
-    const colorName = tailwindColors[colorIndex];
-    const colorMain = tailwindColorsShades[colorName][700];
-    const colorDark = tailwindColorsShades[colorName][800];
-    const colorDarker = tailwindColorsShades[colorName][900];
+    const colorIndex = Math.floor(Math.random() * colors.length);
+    const colorName = colors[colorIndex];
+    const colorMain = colorsShades[colorName][700];
+    const colorDark = colorsShades[colorName][800];
+    const colorDarker = colorsShades[colorName][900];
 
     for (let i = 1; i <= 10; i ++) {
         let line = `${tableNo} X ${i} = ${tableNo * i}`;
