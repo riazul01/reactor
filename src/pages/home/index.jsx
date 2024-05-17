@@ -92,7 +92,7 @@ const projectItems = [
         name: 'Multiplication Table Generator',
         image: MultiplicationTableImage,
         tags: ['react', 'tailwindCSS'],
-        link: '/multiply-table-generator'
+        link: '/multiplication-table-generator'
     },
     {
         id: 12,

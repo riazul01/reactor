@@ -33,7 +33,7 @@ const App = () => {
         <Route path="/random-password-generator" element={<PasswordGenerator/>}/>
         <Route path="/contact-list" element={<ContactList/>}/>
         <Route path="/rotation-counter" element={<RotationCounter/>}/>
-        <Route path="/multiply-table-generator" element={<MultiplyTableGenerator/>}/>
+        <Route path="/multiplication-table-generator" element={<MultiplyTableGenerator/>}/>
       </Routes>
     </BrowserRouter>
   );
