@@ -10,8 +10,13 @@ const MultiplyTableGenerator = () => {
             return !isNaN(parseInt(ch)) ? ch : null;
         });
 
-        let min = parseInt(Math.min(...tempArr).toString().slice(0, 4));
-        let max = parseInt(Math.max(...tempArr).toString().slice(0, 4));
+        let min = parseInt(Math.min(...tempArr));
+        let max = parseInt(Math.max(...tempArr));
+
+        if (min !== max) {
+            min = parseInt(Math.min(...tempArr).toString().slice(0, 4));
+            max = parseInt(Math.max(...tempArr).toString().slice(0, 4));
+        }
 
         if (min > max) {
             [min, max] = [max, min];
