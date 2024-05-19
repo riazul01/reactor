@@ -10,7 +10,7 @@ import SplitScreen from './pages/projects/split-screen';
 import Counter from './pages/projects/counter';
 import Todo from './pages/projects/Todo';
 import RandomColors from './pages/projects/random-colors';
-import PxToREM from './pages/PxToREM';
+import PxToREM from './pages/projects/PxToREM';
 import AgeCalculator from './pages/projects/AgeCalculator';
 import PasswordGenerator from './pages/projects/PasswordGenerator';
 import ContactList from './pages/projects/ContactList';
