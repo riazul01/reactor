@@ -51,15 +51,15 @@ const Todo = () => {
     }
 
     return (
-        <div className="px-[0.4rem] py-[8rem] text-[#fff] font-wix w-full h-auto min-h-[100vh] todo-bg bg-cover bg-fixed">
+        <div className="px-[0.4rem] py-[8rem] text-[#fff] font-wix w-full h-auto min-h-[100vh] bg-todo bg-cover bg-fixed">
             <div className="mx-auto w-full max-w-[500px]">
                 <form onSubmit={handleSubmit} className="flex">
-                    <input value={task.task} onChange={handleChange} name="task" type="text" placeholder="Enter task" className="px-[0.8rem] py-[0.4rem] text-[1.1rem] border-none outline-none bg-[#000] bg-opacity-60 rounded-s-lg"/>
-                    <select value={task.status} onChange={handleChange} name="status" className="px-[0.8rem] py-[0.4rem] text-[1.1rem] border-l-[1px] border-[#222] outline-none bg-[#000]">
+                    <input value={task.task} onChange={handleChange} name="task" type="text" placeholder="Enter task" className="px-[0.8rem] py-[0.4rem] text-[1.1rem] w-[50%] border-none outline-none bg-[#000] bg-opacity-60 rounded-s-lg"/>
+                    <select value={task.status} onChange={handleChange} name="status" className="px-[0.8rem] py-[0.4rem] text-[1.1rem] w-[30%] border-l-[1px] border-[#222] outline-none bg-[#000]">
                         <option value="active">Active</option>
                         <option value="completed">Completed</option>
                     </select>
-                    <button type="submit" className="px-[1rem] text-[1.1rem] bg-green-800 border-none outline-none rounded-e-lg">{edit.status ? 'Update' : 'Submit'}</button>
+                    <button type="submit" className="px-[1rem] text-[1.1rem] w-[20%] bg-green-800 border-none outline-none rounded-e-lg">{edit.status ? 'Update' : 'Submit'}</button>
                 </form>
 
                 <div className="mt-[1rem] flex items-center">
@@ -70,18 +70,18 @@ const Todo = () => {
 
                 <div className="mt-[1rem]">
                     <div className="w-full flex items-center">
-                        <strong className="w-[45%] text-[1.1rem] underline">Task</strong>
-                        <strong className="w-[25%] text-[1.1rem] underline">Status</strong>
-                        <strong className="w-[30%] text-[1.1rem] underline">Actions</strong>
+                        <strong className="w-[50%] text-[1.1rem] underline">Task</strong>
+                        <strong className="w-[24%] text-[1.1rem] underline">Status</strong>
+                        <strong className="w-[26%] text-[1.1rem] underline">Actions</strong>
                     </div>
 
                     {!filteredTodo.length && <p className="py-[0.8rem] text-[1.1rem]">Add some task!</p>}
                     
                     {filteredTodo.length !== 0 && filteredTodo.map((elem, index) => {
                         return <div key={index} className="pt-[1rem] w-full flex items-start">
-                            <span className="w-[45%] text-[1.1rem]">{elem.task}</span>
-                            <span className={`w-[25%] text-[1.1rem] ${elem.status === 'active' ? 'text-[orange]' : 'text-[#3ab16e]'}`}>{elem.status}</span>
-                            <span className="w-[30%] flex items-center gap-[0.6rem]">
+                            <span className="w-[50%] text-[1.1rem]">{elem.task}</span>
+                            <span className={`w-[24%] text-[1.1rem] ${elem.status === 'active' ? 'text-[orange]' : 'text-[#3ab16e]'}`}>{elem.status}</span>
+                            <span className="w-[26%] flex items-center justify-end gap-[0.6rem]">
                                 <button onClick={() => handleEdit(elem, index)} className="px-[0.6rem] py-[0.2rem] text-[1rem] border-none outline-none rounded-md bg-[steelblue]">Edit</button>
                                 <button onClick={() => handleRemove(index)} className="px-[0.6rem] py-[0.2rem] text-[1rem] border-none outline-none rounded-md bg-[crimson]">Delete</button>
                             </span>
