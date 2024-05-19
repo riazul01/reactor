@@ -10,7 +10,7 @@ const Counter = () => {
     }
 
     return (
-        <div className="p-[2rem] w-full h-auto min-h-[100vh] bg-[#222831]" style={{fontFamily: "'Jersey 15', sans-serif"}}>
+        <div className="p-[2rem] w-full h-auto min-h-[100vh] font-jersey15 bg-[#222831]">
             <p className="mx-auto text-[1.6rem] text-[#fff] max-w-[1420px]">Counter: {counters.length}</p>
             <div className="mx-auto py-[1rem] w-full h-auto grid grid-cols-6 items-start gap-[1rem] max-w-[1420px]">
                 {counters.map((item) => {
