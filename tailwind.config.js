@@ -11,7 +11,9 @@ export default {
       sans: ['Rethink Sans', 'sans-serif'],
       wix: ['Wix Madefor Display', 'sans-serif'],
       albert: ['Albert Sans', 'sans-serif'],
-      jersey15: ['"Jersey 15"', 'sans-serif']
+      jersey15: ['"Jersey 15"', 'sans-serif'],
+      rubik: ['Rubik', 'sans-serif'],
+      marcellus: ['Marcellus', 'serif']
     }
   },
   plugins: [],

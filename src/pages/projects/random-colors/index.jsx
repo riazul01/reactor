@@ -25,7 +25,7 @@ const RandomColors = () => {
     }
 
     return (
-        <div className="px-[0.4rem] pt-[7rem] w-full h-[100vh] bg-[#000]" style={{fontFamily: "'Exo 2', sans-serif"}}>
+        <div className="px-[0.4rem] pt-[7rem] w-full h-[100vh] font-marcellus overflow-hidden bg-[#000]">
             <div className="mx-auto h-auto w-full max-w-[640px]">
                 <h1 className="pb-[3rem] text-[1.3rem] text-center font-[600] uppercase cursor-default underline" style={{color: colorData.color}}>Random colors</h1>
                 
@@ -45,9 +45,9 @@ const RandomColors = () => {
                             <span className="">{colorData.rgb}</span>
                         </p>
                         <div className="flex items-center gap-[0.8rem]">
-                            <button onClick={handleRandomColor} className="mt-[1rem] px-[0.8rem] py-[0.4rem] text-[#fff] font-[600] border-none outline-none bg-[#222] rounded-md">Random Color</button>
-                            <button onClick={() => handlePrevColor(colorData.id)} className="mt-[1rem] px-[0.8rem] py-[0.4rem] text-[1rem] text-[#fff] font-[600] border-none outline-none bg-[#222] rounded-md">Prev</button>
-                            <button onClick={() => handleNextColor(colorData.id)} className="mt-[1rem] px-[0.8rem] py-[0.4rem] text-[1rem] text-[#fff] font-[600] border-none outline-none bg-[#222] rounded-md">Next</button>
+                            <button onClick={handleRandomColor} className="mt-[1rem] px-[0.8rem] py-[0.4rem] text-[#fff] font-[600] border-none outline-none bg-[#222]">Random Color</button>
+                            <button onClick={() => handlePrevColor(colorData.id)} className="mt-[1rem] px-[0.8rem] py-[0.4rem] text-[1rem] text-[#fff] font-[600] border-none outline-none bg-[#222]">Prev</button>
+                            <button onClick={() => handleNextColor(colorData.id)} className="mt-[1rem] px-[0.8rem] py-[0.4rem] text-[1rem] text-[#fff] font-[600] border-none outline-none bg-[#222]">Next</button>
                         </div>
                     </div>
                 </div>
