@@ -10,6 +10,7 @@ const AgeCalculator = () => {
   const [ageByHours, setAgeByHours] = useState("");
   const [ageByMinutes, setAgeByMinutes] = useState("");
   const [ageBySeconds, setAgeBySeconds] = useState("");
+
   const dayConst = 86400;
 
   useEffect(() => {
