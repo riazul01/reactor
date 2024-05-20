@@ -13,7 +13,8 @@ export default {
       albert: ['Albert Sans', 'sans-serif'],
       jersey15: ['"Jersey 15"', 'sans-serif'],
       marcellus: ['Marcellus', 'serif'],
-      alegreya: ['Alegreya Sans', 'sans-serif']
+      alegreya: ['Alegreya Sans', 'sans-serif'],
+      quicksand: ['Quicksand', 'sans-serif']
     }
   },
   plugins: [],
