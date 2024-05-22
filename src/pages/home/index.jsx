@@ -75,10 +75,10 @@ const projectItems = [
     },
     {
         id: 9,
-        name: 'Contact List',
+        name: 'Algorithms',
         image: ContactListImage,
         tags: ['react', 'tailwindCSS'],
-        link: '/contact-list'
+        link: '/algorithms'
     },
     {
         id: 10,

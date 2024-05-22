@@ -13,7 +13,6 @@ import RandomColors from './pages/projects/random-colors';
 import PxToREM from './pages/projects/PxToREM';
 import AgeCalculator from './pages/projects/AgeCalculator';
 import PasswordGenerator from './pages/projects/PasswordGenerator';
-import ContactList from './pages/projects/ContactList';
 import RotationCounter from './pages/projects/RotationCounter';
 import MultiplyTableGenerator from './pages/projects/multiply-table-generator';
 
@@ -30,9 +29,8 @@ const App = () => {
         <Route path="/random-colors" element={<RandomColors/>}/>
         <Route path="/px-to-rem" element={<PxToREM/>}/>
         <Route path="/age-calculator" element={<AgeCalculator/>}/>
-        <Route path="/random-password-generator" element={<PasswordGenerator/>}/>
-        <Route path="/contact-list" element={<ContactList/>}/>
         <Route path="/rotation-counter" element={<RotationCounter/>}/>
+        <Route path="/random-password-generator" element={<PasswordGenerator/>}/>
         <Route path="/multiplication-table-generator" element={<MultiplyTableGenerator/>}/>
       </Routes>
     </BrowserRouter>
