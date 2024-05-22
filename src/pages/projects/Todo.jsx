@@ -51,11 +51,11 @@ const Todo = () => {
   };
 
   return (
-    <div className="px-2 py-32 text-white font-wix w-full h-auto min-h-screen bg-todo bg-cover bg-fixed">
-      <div className="mx-auto w-full max-w-[500px]">
+    <div className="px-2 py-8 lg:py-32 text-white font-wix w-full h-auto min-h-screen bg-todo bg-cover bg-fixed overflow-x-hidden overflow-y-auto">
+      <div className="mx-auto w-full max-w-[540px]">
         <form
           onSubmit={handleSubmit}
-          className="h-10 w-full flex items-center justify-between"
+          className="h-auto w-full flex flex-wrap items-center justify-start sm:justify-between"
         >
           <input
             value={task.task}
@@ -63,20 +63,20 @@ const Todo = () => {
             name="task"
             type="text"
             placeholder="Enter task"
-            className="px-3 text-lg h-full w-1/2 border-none outline-none bg-black bg-opacity-60 rounded-s-lg"
+            className="mb-4 sm:mb-0 px-3 text-lg h-10 w-full sm:w-1/2 border-none outline-none bg-black bg-opacity-60 rounded-s-lg"
           />
           <select
             value={task.status}
             onChange={handleChange}
             name="status"
-            className="px-3 text-lg h-full w-[30%] border-l border-neutral-800 outline-none bg-black"
+            className="px-3 text-lg h-10 w-32 sm:w-[30%] border-l border-neutral-800 outline-none bg-black"
           >
             <option value="active">Active</option>
             <option value="completed">Completed</option>
           </select>
           <button
             type="submit"
-            className="px-4 text-lg h-full w-[20%] bg-green-800 border-none outline-none rounded-e-lg"
+            className="px-4 text-lg h-10 w-28 sm:w-[20%] bg-green-800 border-none outline-none rounded-e-lg"
           >
             {edit.status ? "Update" : "Submit"}
           </button>
@@ -119,9 +119,13 @@ const Todo = () => {
 
         <div className="mt-4">
           <div className="w-full flex items-center">
-            <strong className="w-1/2 text-lg underline">Task</strong>
-            <strong className="w-[24%] text-lg underline">Status</strong>
-            <strong className="w-[26%] text-lg underline">Actions</strong>
+            <strong className="w-3/5 sm:w-1/2 text-lg underline">Task</strong>
+            <strong className="w-2/5 sm:w-[24%] text-lg underline">
+              Status
+            </strong>
+            <strong className="hidden sm:block sm:w-[26%] text-lg underline">
+              Actions
+            </strong>
           </div>
 
           {!filteredTodo.length && (
@@ -131,10 +135,15 @@ const Todo = () => {
           {filteredTodo.length !== 0 &&
             filteredTodo.map((elem, index) => {
               return (
-                <div key={index} className="pt-4 w-full flex items-start">
-                  <span className="w-1/2 text-lg">{elem.task}</span>
+                <div
+                  key={index}
+                  className="pt-4 w-full flex flex-wrap items-start"
+                >
+                  <span className="w-3/5 sm:w-1/2 text-white text-lg drop-shadow-2xl">
+                    {elem.task}
+                  </span>
                   <span
-                    className={`w-[24%] text-lg ${
+                    className={`w-2/5 sm:w-[24%] text-lg ${
                       elem.status === "active"
                         ? "text-yellow-400"
                         : "text-green-500"
@@ -142,16 +151,16 @@ const Todo = () => {
                   >
                     {elem.status}
                   </span>
-                  <span className="w-[26%] flex items-center justify-end gap-2.5">
+                  <span className="mt-2 sm:mt-0 w-full sm:w-[26%] flex items-center justify-start sm:justify-between gap-2.5 sm:gap-2">
                     <button
                       onClick={() => handleEdit(elem, index)}
-                      className="px-2.5 py-1 text-base border-none outline-none rounded-md bg-sky-700"
+                      className="px-4 py-1 text-base text-white border-none outline-none rounded-md bg-sky-700"
                     >
                       Edit
                     </button>
                     <button
                       onClick={() => handleRemove(index)}
-                      className="px-2.5 py-1 text-base border-none outline-none rounded-md bg-red-700"
+                      className="px-2.5 py-1 text-base text-white border-none outline-none rounded-md bg-red-700"
                     >
                       Delete
                     </button>
