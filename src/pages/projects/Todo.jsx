@@ -51,7 +51,7 @@ const Todo = () => {
   };
 
   return (
-    <div className="bg-todo h-auto min-h-screen w-full overflow-y-auto overflow-x-hidden bg-cover bg-fixed px-2 py-8 font-wix text-white lg:py-32">
+    <div className="bg-todo h-auto min-h-screen w-full overflow-x-hidden bg-cover bg-fixed px-2 py-8 font-wix text-white lg:py-32">
       <div className="mx-auto w-full max-w-[540px]">
         <form
           onSubmit={handleSubmit}
