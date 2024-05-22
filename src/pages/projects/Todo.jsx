@@ -82,7 +82,7 @@ const Todo = () => {
           </button>
         </form>
 
-        <div className="mt-4 h-10 flex items-center">
+        <div className="mt-4 sm:mt-6 h-10 flex items-center">
           <button
             onClick={() => setShow("all")}
             className={`px-3 text-lg h-full ${
@@ -117,7 +117,7 @@ const Todo = () => {
           </button>
         </div>
 
-        <div className="mt-4">
+        <div className="mt-4 sm:mt-6">
           <div className="w-full flex items-center">
             <strong className="w-3/5 sm:w-1/2 text-lg underline">Task</strong>
             <strong className="w-2/5 sm:w-[24%] text-lg underline">
