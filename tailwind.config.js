@@ -8,7 +8,7 @@ export default {
     extend: {},
     fontFamily: {
       mono: ['IBM Plex Mono', 'monospace'],
-      sans: ['Rethink Sans', 'sans-serif'],
+      rethink: ['Rethink Sans', 'sans-serif'],
       wix: ['Wix Madefor Display', 'sans-serif'],
       albert: ['Albert Sans', 'sans-serif'],
       jersey15: ['"Jersey 15"', 'sans-serif'],
