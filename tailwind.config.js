@@ -17,8 +17,8 @@ export default {
       mono: ['IBM Plex Mono', 'monospace'],
       rethink: ['Rethink Sans', 'sans-serif'],
       wix: ['Wix Madefor Display', 'sans-serif'],
-      albert: ['Albert Sans', 'sans-serif'],
       jersey15: ['"Jersey 15"', 'sans-serif'],
+      albert: ['Albert Sans', 'sans-serif'],
       marcellus: ['Marcellus', 'serif'],
       alegreya: ['Alegreya Sans', 'sans-serif'],
       quicksand: ['Quicksand', 'sans-serif']
