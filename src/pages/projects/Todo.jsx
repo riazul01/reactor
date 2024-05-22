@@ -97,7 +97,7 @@ const Todo = () => {
             onClick={() => setShow("active")}
             className={`h-full border-x border-neutral-800 px-3 text-lg ${
               show === "active"
-                ? "border-green-800 bg-green-800 hover:bg-green-800"
+                ? "border-x-green-800 bg-green-800 hover:bg-green-800"
                 : "bg-black bg-opacity-60 hover:bg-opacity-100"
             } ${
               show === "all" ? "border-l-green-800" : "border-r-green-800"
