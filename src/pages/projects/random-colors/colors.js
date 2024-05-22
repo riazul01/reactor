@@ -107,7 +107,7 @@ export const colors = [
     { id: 106, color: 'Orange', hex: '#FFA500', rgb: 'rgb(255, 165, 0)' },
     { id: 107, color: 'OrangeRed', hex: '#FF4500', rgb: 'rgb(255, 69, 0)' },
     { id: 108, color: 'Orchid', hex: '#DA70D6', rgb: 'rgb(218, 112, 214)' },
-    { id: 109, color: 'PaleGoldenRod', hex: '#EEE8AA', rgb: 'rgb(238, 232, 170)'},
+    { id: 109, color: 'PaleGoldenRod', hex: '#EEE8AA', rgb: 'rgb(238, 232, 170)' },
     { id: 110, color: 'PaleGreen', hex: '#98FB98', rgb: 'rgb(152, 251, 152)' },
     { id: 111, color: 'PaleTurquoise', hex: '#AFEEEE', rgb: 'rgb(175, 238, 238)' },
     { id: 112, color: 'PaleVioletRed', hex: '#DB7093', rgb: 'rgb(219, 112, 147)' },
