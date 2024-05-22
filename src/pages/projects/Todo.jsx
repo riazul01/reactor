@@ -51,11 +51,11 @@ const Todo = () => {
   };
 
   return (
-    <div className="px-2 py-8 lg:py-32 text-white font-wix w-full h-auto min-h-screen bg-todo bg-cover bg-fixed overflow-x-hidden overflow-y-auto">
+    <div className="bg-todo h-auto min-h-screen w-full overflow-y-auto overflow-x-hidden bg-cover bg-fixed px-2 py-8 font-wix text-white lg:py-32">
       <div className="mx-auto w-full max-w-[540px]">
         <form
           onSubmit={handleSubmit}
-          className="h-auto w-full flex flex-wrap items-center justify-start sm:justify-between"
+          className="flex h-auto w-full flex-wrap items-center justify-start sm:justify-between"
         >
           <input
             value={task.task}
@@ -63,67 +63,67 @@ const Todo = () => {
             name="task"
             type="text"
             placeholder="Enter task"
-            className="mb-4 sm:mb-0 px-3 text-lg h-10 w-full sm:w-1/2 border-none outline-none bg-black bg-opacity-60 rounded-s-lg"
+            className="mb-4 h-10 w-full rounded-s-lg border-none bg-black bg-opacity-60 px-3 text-lg outline-none sm:mb-0 sm:w-1/2"
           />
           <select
             value={task.status}
             onChange={handleChange}
             name="status"
-            className="px-3 text-lg h-10 w-32 sm:w-[30%] border-l border-neutral-800 outline-none bg-black"
+            className="h-10 w-32 border-l border-neutral-800 bg-black px-3 text-lg outline-none sm:w-[30%]"
           >
             <option value="active">Active</option>
             <option value="completed">Completed</option>
           </select>
           <button
             type="submit"
-            className="px-4 text-lg h-10 w-28 sm:w-[20%] bg-green-800 border-none outline-none rounded-e-lg"
+            className="h-10 w-28 rounded-e-lg border-none bg-green-800 px-4 text-lg outline-none sm:w-[20%]"
           >
             {edit.status ? "Update" : "Submit"}
           </button>
         </form>
 
-        <div className="mt-4 sm:mt-6 h-10 flex items-center">
+        <div className="mt-4 flex h-10 items-center sm:mt-6">
           <button
             onClick={() => setShow("all")}
-            className={`px-3 text-lg h-full ${
+            className={`h-full px-3 text-lg ${
               show === "all"
                 ? "bg-green-800 hover:bg-green-800"
                 : "bg-[#000] bg-opacity-60 hover:bg-opacity-100"
-            } transition-all ease-in-out duration-300 rounded-s-lg`}
+            } rounded-s-lg transition-all duration-300 ease-in-out`}
           >
             All
           </button>
           <button
             onClick={() => setShow("active")}
-            className={`px-3 text-lg h-full border-x border-neutral-800 ${
+            className={`h-full border-x border-neutral-800 px-3 text-lg ${
               show === "active"
-                ? "bg-green-800 hover:bg-green-800 border-green-800"
+                ? "border-green-800 bg-green-800 hover:bg-green-800"
                 : "bg-black bg-opacity-60 hover:bg-opacity-100"
             } ${
               show === "all" ? "border-l-green-800" : "border-r-green-800"
-            } transition-all ease-in-out duration-300`}
+            } transition-all duration-300 ease-in-out`}
           >
             Active
           </button>
           <button
             onClick={() => setShow("completed")}
-            className={`px-3 text-lg h-full ${
+            className={`h-full px-3 text-lg ${
               show === "completed"
                 ? "bg-green-800 hover:bg-green-800"
                 : "bg-black bg-opacity-60 hover:bg-opacity-100"
-            } transition-all ease-in-out duration-300 rounded-e-lg`}
+            } rounded-e-lg transition-all duration-300 ease-in-out`}
           >
             Completed
           </button>
         </div>
 
         <div className="mt-4 sm:mt-6">
-          <div className="w-full flex items-center">
-            <strong className="w-3/5 sm:w-1/2 text-lg underline">Task</strong>
-            <strong className="w-2/5 sm:w-[24%] text-lg underline">
+          <div className="flex w-full items-center">
+            <strong className="w-3/5 text-lg underline sm:w-1/2">Task</strong>
+            <strong className="w-2/5 text-lg underline sm:w-[24%]">
               Status
             </strong>
-            <strong className="hidden sm:block sm:w-[26%] text-lg underline">
+            <strong className="hidden text-lg underline sm:block sm:w-[26%]">
               Actions
             </strong>
           </div>
@@ -137,13 +137,13 @@ const Todo = () => {
               return (
                 <div
                   key={index}
-                  className="pt-4 w-full flex flex-wrap items-start"
+                  className="flex w-full flex-wrap items-start pt-4"
                 >
-                  <span className="w-3/5 sm:w-1/2 text-white text-lg drop-shadow-2xl">
+                  <span className="w-3/5 text-lg text-white drop-shadow-2xl sm:w-1/2">
                     {elem.task}
                   </span>
                   <span
-                    className={`w-2/5 sm:w-[24%] text-lg ${
+                    className={`w-2/5 text-lg sm:w-[24%] ${
                       elem.status === "active"
                         ? "text-yellow-400"
                         : "text-green-500"
@@ -151,16 +151,16 @@ const Todo = () => {
                   >
                     {elem.status}
                   </span>
-                  <span className="mt-2 sm:mt-0 w-full sm:w-[26%] flex items-center justify-start sm:justify-between gap-2.5 sm:gap-2">
+                  <span className="mt-2 flex w-full items-center justify-start gap-2.5 sm:mt-0 sm:w-[26%] sm:justify-between sm:gap-2">
                     <button
                       onClick={() => handleEdit(elem, index)}
-                      className="px-4 py-1 text-base text-white border-none outline-none rounded-md bg-sky-700"
+                      className="rounded-md border-none bg-sky-700 px-4 py-1 text-base text-white outline-none"
                     >
                       Edit
                     </button>
                     <button
                       onClick={() => handleRemove(index)}
-                      className="px-2.5 py-1 text-base text-white border-none outline-none rounded-md bg-red-700"
+                      className="rounded-md border-none bg-red-700 px-2.5 py-1 text-base text-white outline-none"
                     >
                       Delete
                     </button>
