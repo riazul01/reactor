@@ -33,13 +33,13 @@ const PxToREM = () => {
       <div className="mx-auto w-full max-w-[1000px] pt-24">
         <button
           onClick={() => setPxToRem(!pxToRem)}
-          className="fixed left-0 top-8 cursor-pointer bg-slate-800 py-2 pe-12 ps-4 text-xl uppercase text-gray-400 sm:text-2xl"
+          className="fixed left-0 top-8 cursor-pointer bg-slate-800 py-2 pe-12 ps-4 text-xl uppercase text-gray-400 sm:top-10 sm:text-2xl"
           style={{ clipPath: "polygon(0 0, 100% 0, 85% 100%, 0% 100%)" }}
         >
           {pxToRem ? "PX To REM" : "REM To PX"} Converter
         </button>
         <div
-          className={`mt-20 flex w-full ${pxToRem ? "flex-col sm:flex-row" : "flex-col-reverse sm:flex-row-reverse"} items-center justify-center gap-4`}
+          className={`mt-24 flex w-full sm:mt-28 ${pxToRem ? "flex-col sm:flex-row" : "flex-col-reverse sm:flex-row-reverse"} items-center justify-center gap-4`}
         >
           <div className="relative w-full max-w-72">
             <input
