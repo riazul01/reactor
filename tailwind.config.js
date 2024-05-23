@@ -19,8 +19,8 @@ export default {
       wix: ['Wix Madefor Display', 'sans-serif'],
       jersey15: ['"Jersey 15"', 'sans-serif'],
       marcellus: ['Marcellus', 'serif'],
-      albert: ['Albert Sans', 'sans-serif'],
       alegreya: ['Alegreya Sans', 'sans-serif'],
+      albert: ['Albert Sans', 'sans-serif'],
       quicksand: ['Quicksand', 'sans-serif']
     }
   },
