@@ -11,7 +11,7 @@ import RandomColorsImage from '/src/assets/images/thumbs/random-colors.png';
 import PxToRemImage from '/src/assets/images/thumbs/px-to-rem.png';
 import AgeCalculatorImage from '/src/assets/images/thumbs/age-calculator.png';
 import PasswordGeneratorImage from '/src/assets/images/thumbs/password-generator.png';
-import ContactListImage from '/src/assets/images/thumbs/contact-list.png';
+import AlgorithmsImage from '/src/assets/images/thumbs/algorithms.png';
 import RotationCounterImage from '/src/assets/images/thumbs/rotation-counter.png';
 import MultiplicationTableImage from '/src/assets/images/thumbs/multiplication-table.png';
 import Footer from './Footer';
@@ -76,7 +76,7 @@ const projectItems = [
     {
         id: 9,
         name: 'Algorithms',
-        image: ContactListImage,
+        image: AlgorithmsImage,
         tags: ['react', 'tailwindCSS'],
         link: '/algorithms'
     },
