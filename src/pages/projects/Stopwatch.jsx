@@ -35,40 +35,40 @@ const Stopwatch = () => {
   };
 
   return (
-    <div className="h-screen w-full font-rethink flex items-center justify-center bg-stopwatch bg-cover bg-fixed">
-      <div className="mx-2.5 my-0 p-4 w-auto h-auto flex flex-col items-center justify-center gap-4 bg-black bg-opacity-30 backdrop-blur rounded-3xl">
-        <div className="px-0 py-5 flex flex-wrap items-center justify-center">
-          <p className="m-1 w-32 text-white text-5xl text-center font-medium rounded">
+    <div className="bg-stopwatch flex h-screen w-full items-center justify-center overflow-x-hidden bg-cover bg-fixed font-rethink">
+      <div className="mx-2.5 flex h-auto w-auto flex-col items-center justify-center gap-10 rounded-3xl bg-black bg-opacity-30 px-2.5 pb-11 pt-10 backdrop-blur">
+        <div className="flex flex-wrap items-center justify-center">
+          <p className="m-1 w-32 rounded text-center text-5xl font-medium text-white">
             {String(Math.floor(elapsedTime / (1000 * 60 * 60))).padStart(
               2,
-              "0"
+              "0",
             )}
             <span className="ml-2 text-xl">hh</span>
           </p>
-          <p className="m-1 w-32 text-white text-5xl text-center font-medium rounded">
+          <p className="m-1 w-32 rounded text-center text-5xl font-medium text-white">
             {String(Math.floor((elapsedTime / (1000 * 60)) % 60)).padStart(
               2,
-              "0"
+              "0",
             )}
             <span className="ml-2 text-xl">mm</span>
           </p>
-          <p className="m-1 w-32 text-white text-5xl text-center font-medium rounded">
+          <p className="m-1 w-32 rounded text-center text-5xl font-medium text-white">
             {String(Math.floor((elapsedTime / 1000) % 60)).padStart(2, "0")}
             <span className="ml-2 text-xl">ss</span>
           </p>
-          <p className="m-1 w-32 text-white text-5xl text-center font-medium rounded">
+          <p className="m-1 w-32 rounded text-center text-5xl font-medium text-white">
             {String(Math.floor(elapsedTime % 1000)).padStart(3, "0")}
             <span className="ml-2 text-xl">ms</span>
           </p>
         </div>
-        <div className="pt-2.5 pb-6 flex flex-wrap items-center justify-center gap-4">
+        <div className="flex flex-wrap items-center justify-center gap-4">
           <button
             onClick={startTimer}
             disabled={controls.start}
-            className={`px-4 py-2 text-xl font-semibold uppercase border-none outline-none rounded transition-all ease-in-out duration-300 ${
+            className={`rounded border-none px-4 py-2 text-xl font-semibold uppercase outline-none transition-all duration-300 ease-in-out ${
               controls.start
-                ? "opacity-40 cursor-default"
-                : "opacity-100 cursor-pointer"
+                ? "cursor-default opacity-40"
+                : "cursor-pointer opacity-100"
             } bg-[seagreen]`}
           >
             Start
@@ -76,10 +76,10 @@ const Stopwatch = () => {
           <button
             onClick={pauseTimer}
             disabled={controls.pause}
-            className={`px-4 py-2 text-xl font-semibold uppercase border-none outline-none rounded transition-all ease-in-out duration-300 ${
+            className={`rounded border-none px-4 py-2 text-xl font-semibold uppercase outline-none transition-all duration-300 ease-in-out ${
               controls.pause
-                ? "opacity-40 cursor-default"
-                : "opacity-100 cursor-pointer"
+                ? "cursor-default opacity-40"
+                : "cursor-pointer opacity-100"
             } bg-[crimson]`}
           >
             Pause
@@ -87,10 +87,10 @@ const Stopwatch = () => {
           <button
             onClick={resetTimer}
             disabled={controls.reset}
-            className={`px-4 py-2 text-xl font-semibold uppercase border-none outline-none rounded transition-all ease-in-out duration-300 ${
+            className={`rounded border-none px-4 py-2 text-xl font-semibold uppercase outline-none transition-all duration-300 ease-in-out ${
               controls.reset
-                ? "opacity-40 cursor-default"
-                : "opacity-100 cursor-pointer"
+                ? "cursor-default opacity-40"
+                : "cursor-pointer opacity-100"
             } bg-[steelblue]`}
           >
             Reset
