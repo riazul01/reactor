@@ -68,11 +68,11 @@ const Clock = () => {
   }, [time, date]);
 
   return (
-    <div className="mx-auto font-mono flex flex-col items-center justify-center gap-4 h-screen w-full bg-clock bg-cover bg-fixed">
-      <h1 className="text-white text-[5rem] text-center font-light drop-shadow-lg">
+    <div className="bg-clock mx-auto flex h-screen w-full flex-col items-center justify-center gap-4 overflow-hidden bg-cover bg-fixed font-mono">
+      <h1 className="text-center text-[3rem] font-light text-white drop-shadow-lg md:text-[5rem]">
         {time}
       </h1>
-      <p className="text-white text-[2.4rem] text-center font-light drop-shadow-lg">
+      <p className="text-center text-[1.4rem] font-light text-white drop-shadow-lg md:text-[2.4rem]">
         {date}
       </p>
     </div>
