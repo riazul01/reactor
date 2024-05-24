@@ -21,7 +21,8 @@ export default {
       marcellus: ['Marcellus', 'serif'],
       alegreya: ['Alegreya Sans', 'sans-serif'],
       albert: ['Albert Sans', 'sans-serif'],
-      quicksand: ['Quicksand', 'sans-serif']
+      quicksand: ['Quicksand', 'sans-serif'],
+      raleway: ['Raleway', 'sans-serif']
     }
   },
   plugins: [],

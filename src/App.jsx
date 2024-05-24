@@ -15,6 +15,7 @@ import AgeCalculator from './pages/projects/AgeCalculator';
 import PasswordGenerator from './pages/projects/PasswordGenerator';
 import RotationCounter from './pages/projects/RotationCounter';
 import MultiplyTableGenerator from './pages/projects/multiply-table-generator';
+import Algorithms from './pages/projects/algorithms';
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="/rotation-counter" element={<RotationCounter/>}/>
         <Route path="/random-password-generator" element={<PasswordGenerator/>}/>
         <Route path="/multiplication-table-generator" element={<MultiplyTableGenerator/>}/>
+        <Route path="/algorithms" element={<Algorithms/>}/>
       </Routes>
     </BrowserRouter>
   );
