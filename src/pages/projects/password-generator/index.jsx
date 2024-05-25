@@ -30,7 +30,7 @@ const PasswordGenerator = () => {
   };
 
   return (
-    <div className="flex h-screen w-full items-center justify-center bg-black px-2 font-coding">
+    <div className="flex h-screen w-full items-center justify-center overflow-x-hidden bg-black px-2 font-coding">
       <div className="mx-auto h-auto w-full max-w-[560px] overflow-hidden rounded-xl border-[3px] border-green-900">
         <h1 className="bg-green-900 px-4 pb-5 pt-2 text-xl uppercase text-white">
           Random Password Generator

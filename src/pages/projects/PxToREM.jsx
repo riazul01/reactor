@@ -29,7 +29,7 @@ const PxToREM = () => {
   };
 
   return (
-    <div className="h-screen w-full overflow-x-hidden bg-slate-950 px-2 font-alegreya sm:px-0">
+    <div className="h-screen w-full overflow-hidden bg-slate-950 px-2 font-alegreya sm:px-0">
       <div className="mx-auto w-full max-w-[1000px] pt-24">
         <button
           onClick={() => setPxToRem(!pxToRem)}
