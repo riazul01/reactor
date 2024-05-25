@@ -22,7 +22,8 @@ export default {
       alegreya: ['Alegreya Sans', 'sans-serif'],
       albert: ['Albert Sans', 'sans-serif'],
       quicksand: ['Quicksand', 'sans-serif'],
-      raleway: ['Raleway', 'sans-serif']
+      raleway: ['Raleway', 'sans-serif'],
+      coding: ['Nanum Gothic Coding', 'monospace']
     }
   },
   plugins: [],
