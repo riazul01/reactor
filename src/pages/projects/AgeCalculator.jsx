@@ -138,7 +138,7 @@ const AgeCalculator = () => {
               className="w-full border-none bg-[#212121] px-3 py-[0.425rem] text-lg text-white outline-none"
             />
           </div>
-          <button className="h-11 w-[120px] rounded-e-md bg-[seagreen] px-3 text-lg font-medium text-white sm:w-[20%]">
+          <button className="h-11 w-[120px] rounded-e-md border-none bg-[seagreen] px-3 text-lg font-medium text-white outline-none sm:w-[20%]">
             Calculate
           </button>
         </form>
