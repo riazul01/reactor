@@ -14,7 +14,7 @@ import PxToREM from "./pages/projects/PxToREM";
 import AgeCalculator from "./pages/projects/AgeCalculator";
 import PasswordGenerator from "./pages/projects/password-generator";
 import RotationCounter from "./pages/projects/RotationCounter";
-import MultiplyTableGenerator from "./pages/projects/multiply-table-generator";
+import MultiplicationTableGenerator from "./pages/projects/multiplication-table-generator";
 import Algorithms from "./pages/projects/algorithms";
 
 const App = () => {
@@ -37,7 +37,7 @@ const App = () => {
         />
         <Route
           path="/multiplication-table-generator"
-          element={<MultiplyTableGenerator />}
+          element={<MultiplicationTableGenerator />}
         />
         <Route path="/algorithms" element={<Algorithms />} />
       </Routes>

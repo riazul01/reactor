@@ -68,7 +68,7 @@ const Clock = () => {
   }, [time, date]);
 
   return (
-    <div className="bg-clock mx-auto flex h-screen w-full flex-col items-center justify-center gap-4 overflow-hidden bg-cover bg-fixed font-mono">
+    <div className="mx-auto flex h-screen w-full flex-col items-center justify-center gap-4 overflow-hidden bg-clock bg-cover bg-fixed font-mono">
       <h1 className="text-center text-[3rem] font-light text-white drop-shadow-lg md:text-[5rem]">
         {time}
       </h1>

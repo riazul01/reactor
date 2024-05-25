@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import MultiplyTable from "./MultiplyTable";
+import MultiplicationTable from "./MultiplicationTable";
 
-const MultiplyTableGenerator = () => {
+const MultiplicationTableGenerator = () => {
   const [rangeInput, setRangeInput] = useState("1-20");
   const [range, setRange] = useState([]);
 
@@ -47,7 +47,7 @@ const MultiplyTableGenerator = () => {
   };
 
   return (
-    <div className="bg-table h-auto min-h-screen w-full overflow-x-hidden bg-cover bg-fixed px-2 py-12 font-albert">
+    <div className="h-auto min-h-screen w-full overflow-x-hidden bg-multiplication-table bg-cover bg-fixed px-2 py-12 font-albert">
       <div className="mx-auto w-full max-w-[1420px]">
         <div className="width-full flex flex-col items-center justify-center gap-4 sm:flex-row sm:justify-between">
           <div className="flex items-center overflow-hidden rounded-lg outline-none">
@@ -71,7 +71,7 @@ const MultiplyTableGenerator = () => {
             { length: range[1] - range[0] + 1 },
             (_, i) => i + range[0],
           ).map((tableNo, index) => {
-            return <MultiplyTable key={index} tableNo={tableNo} />;
+            return <MultiplicationTable key={index} tableNo={tableNo} />;
           })}
         </div>
       </div>
@@ -79,4 +79,4 @@ const MultiplyTableGenerator = () => {
   );
 };
 
-export default MultiplyTableGenerator;
+export default MultiplicationTableGenerator;

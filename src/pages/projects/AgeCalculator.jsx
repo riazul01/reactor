@@ -102,7 +102,7 @@ const AgeCalculator = () => {
   };
 
   return (
-    <div className="bg-age-calc h-auto min-h-screen w-full overflow-x-hidden bg-cover bg-fixed bg-center px-2 py-6 font-quicksand sm:py-12">
+    <div className="h-auto min-h-screen w-full overflow-x-hidden bg-age-calc bg-cover bg-fixed bg-center px-2 py-6 font-quicksand sm:py-12">
       <div className="mx-auto w-full max-w-[700px]">
         <form
           onSubmit={handleCalculateAge}

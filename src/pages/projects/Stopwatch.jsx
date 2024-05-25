@@ -35,7 +35,7 @@ const Stopwatch = () => {
   };
 
   return (
-    <div className="bg-stopwatch flex h-screen w-full items-center justify-center overflow-hidden bg-cover bg-fixed font-rethink">
+    <div className="flex h-screen w-full items-center justify-center overflow-hidden bg-stopwatch bg-cover bg-fixed font-rethink">
       <div className="mx-2.5 flex h-auto w-auto flex-col items-center justify-center gap-10 rounded-3xl bg-black bg-opacity-30 px-2.5 pb-11 pt-10 backdrop-blur">
         <div className="flex flex-wrap items-center justify-center">
           <p className="m-1 w-32 rounded text-center text-5xl font-medium text-white">

@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { colors, colorsShades } from "./colors";
 
-const MultiplyTable = ({ tableNo }) => {
+const MultiplicationTable = ({ tableNo }) => {
   const table = useRef([]);
 
   const colorIndex = Math.floor(Math.random() * colors.length);
@@ -38,4 +38,4 @@ const MultiplyTable = ({ tableNo }) => {
   );
 };
 
-export default MultiplyTable;
+export default MultiplicationTable;
