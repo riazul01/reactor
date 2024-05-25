@@ -102,16 +102,16 @@ const AgeCalculator = () => {
   };
 
   return (
-    <div className="px-[0.4rem] py-[3rem] w-full h-auto min-h-[100vh] bg-age-calc bg-cover bg-center bg-fixed font-quicksand overflow-hidden">
+    <div className="bg-age-calc h-auto min-h-screen w-full overflow-x-hidden bg-cover bg-fixed bg-center px-2 py-6 font-quicksand sm:py-12">
       <div className="mx-auto w-full max-w-[700px]">
         <form
           onSubmit={handleCalculateAge}
-          className="h-[100px] w-full flex flex-row items-end justify-between"
+          className="flex h-auto w-full flex-col items-start justify-between gap-4 sm:flex-row sm:items-end sm:gap-0"
         >
-          <div className="w-[40%] flex flex-col gap-[0.4rem]">
+          <div className="flex w-full flex-col gap-[0.4rem] sm:w-[40%]">
             <label
               htmlFor="birth-date"
-              className="text-[#aaa] text-[1.2rem] font-[500]"
+              className="text-lg font-medium text-neutral-400"
             >
               Date of Birth
             </label>
@@ -120,13 +120,13 @@ const AgeCalculator = () => {
               onChange={(e) => handleInputChange(e, "dob")}
               id="birth-date"
               type="date"
-              className="text-[#fff] text-[1.1rem] px-[0.8rem] py-[0.42rem] w-full bg-[#212121] border-r-2 border-neutral-600 outline-none rounded-s-md"
+              className="w-full rounded-s-md border-r-2 border-neutral-600 bg-[#212121] px-3 py-[0.425rem] text-lg text-white outline-none"
             />
           </div>
-          <div className="w-[40%] flex flex-col gap-[0.4rem]">
+          <div className="flex w-full flex-col gap-[0.4rem] sm:w-[40%]">
             <label
               htmlFor="age-at-the-date"
-              className="text-[#aaa] text-[1.2rem] font-[500]"
+              className="text-lg font-medium text-neutral-400"
             >
               Age at the date of
             </label>
@@ -135,38 +135,26 @@ const AgeCalculator = () => {
               onChange={(e) => handleInputChange(e, "ageAt")}
               id="age-at-the-date"
               type="date"
-              className="text-[#fff] text-[1.1rem] px-[0.8rem] py-[0.42rem] w-full bg-[#212121] border-none outline-none"
+              className="w-full border-none bg-[#212121] px-3 py-[0.425rem] text-lg text-white outline-none"
             />
           </div>
-          <button className="w-[20%] px-[0.8rem] text-[#fff] text-[1.1rem] font-[500] h-[42px] bg-[seagreen] rounded-e-md">
+          <button className="h-11 w-[120px] rounded-e-md bg-[seagreen] px-3 text-lg font-medium text-white sm:w-[20%]">
             Calculate
           </button>
         </form>
 
         {ageByYears && (
-          <div className="mt-[2rem]">
-            <p className="text-[#aaa] text-[1.2rem] font-[500] underline">
+          <div className="mt-6">
+            <p className="text-xl font-medium text-neutral-400 underline">
               Result
             </p>
-            <p className="mt-[1rem] text-[#fff] text-[1.2rem]">{ageByYears}</p>
-            <p className="mt-[1rem] text-[#fff] text-[1.2rem]">
-              or, {ageByMonths}
-            </p>
-            <p className="mt-[1rem] text-[#fff] text-[1.2rem]">
-              or, {ageByWeeks}
-            </p>
-            <p className="mt-[1rem] text-[#fff] text-[1.2rem]">
-              or, {ageByDays}
-            </p>
-            <p className="mt-[1rem] text-[#fff] text-[1.2rem]">
-              or, {ageByHours}
-            </p>
-            <p className="mt-[1rem] text-[#fff] text-[1.2rem]">
-              or, {ageByMinutes}
-            </p>
-            <p className="mt-[1rem] text-[#fff] text-[1.2rem]">
-              or, {ageBySeconds}
-            </p>
+            <p className="mt-4 text-xl text-white">{ageByYears}</p>
+            <p className="mt-4 text-xl text-white">or, {ageByMonths}</p>
+            <p className="mt-4 text-xl text-white">or, {ageByWeeks}</p>
+            <p className="mt-4 text-xl text-white">or, {ageByDays}</p>
+            <p className="mt-4 text-xl text-white">or, {ageByHours}</p>
+            <p className="mt-4 text-xl text-white">or, {ageByMinutes}</p>
+            <p className="mt-4 text-xl text-white">or, {ageBySeconds}</p>
           </div>
         )}
       </div>
