@@ -33,7 +33,8 @@ export default {
       quicksand: ['Quicksand', 'sans-serif'],
       raleway: ['Raleway', 'sans-serif'],
       coding: ['Nanum Gothic Coding', 'monospace'],
-      ace: ['Bruno Ace', 'sans-serif']
+      ace: ['Bruno Ace', 'sans-serif'],
+      poppins: ['Poppins', 'sans-serif']
     }
   },
   plugins: [],
