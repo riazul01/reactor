@@ -32,7 +32,8 @@ export default {
       albert: ['Albert Sans', 'sans-serif'],
       quicksand: ['Quicksand', 'sans-serif'],
       raleway: ['Raleway', 'sans-serif'],
-      coding: ['Nanum Gothic Coding', 'monospace']
+      coding: ['Nanum Gothic Coding', 'monospace'],
+      ace: ['Bruno Ace', 'sans-serif']
     }
   },
   plugins: [],
