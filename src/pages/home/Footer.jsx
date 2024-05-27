@@ -15,7 +15,7 @@ const Footer = () => {
         </a>{" "}
         | &copy; 2024 all rights reserved
       </p>
-      <div class="flex items-center justify-center gap-2 sm:gap-2.5">
+      <div className="flex items-center justify-center gap-2 sm:gap-2.5">
         <a
           href="https://github.com/riazul01"
           target="_blank"

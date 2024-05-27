@@ -34,7 +34,8 @@ export default {
       raleway: ['Raleway', 'sans-serif'],
       ace: ['Bruno Ace', 'sans-serif'],
       albert: ['Albert Sans', 'sans-serif'],
-      poppins: ['Poppins', 'sans-serif']
+      poppins: ['Poppins', 'sans-serif'],
+      belanosima: ['Belanosima', 'sans-serif']
     }
   },
   plugins: [
