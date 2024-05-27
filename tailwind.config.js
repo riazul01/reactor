@@ -10,6 +10,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
+        'logo': 'linear-gradient(45deg, orangered, #4fc624)',
         'clock': 'linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./assets/images/backgrounds/stopwatch-bg.jpg)',
         'stopwatch': 'linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./assets/images/backgrounds/cllock-bg.jpg)',
         'todo': 'linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(./assets/images/backgrounds/todo-bg.jpg)',
@@ -44,6 +45,13 @@ export default {
         '.text-shadow': {
           textShadow: '0.1rem 0.1rem 0.2rem #000',
         },
+        '.text-stroke-2': {
+          '-webkit-text-stroke': '2px #111'
+        },
+        '.text-clipped': {
+          '-webkit-background-clip': 'text',
+          '-webkit-text-fill-color': 'transparent'
+        }
       });
     },
   ],

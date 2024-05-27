@@ -39,7 +39,7 @@ const Header = ({ projects }) => {
       {/* logo */}
       <Link
         to="/"
-        className="logo relative ml-[0.4rem] text-[2.4rem] font-[700] uppercase text-[#fff] no-underline"
+        className="before:bg-logo before:text-clipped text-stroke-2 relative ml-[0.4rem] text-[2.4rem] font-bold uppercase text-white no-underline before:absolute before:left-0 before:top-0 before:z-[-1] before:scale-x-110 before:scale-y-[1.15] before:transform before:text-transparent before:content-['REACTOR']"
       >
         REACTOR
       </Link>
@@ -49,13 +49,13 @@ const Header = ({ projects }) => {
         onClick={handleNavToggle}
         className={`toggler ${toggle ? "active" : null} grid h-[46px] w-[54px] cursor-pointer place-items-center rounded-lg`}
       >
-        <span className="toggleBar relative h-[3px] w-[32px] bg-[#fff] transition-all duration-300 ease-in-out"></span>
+        <span className="toggleBar relative h-[3px] w-8 bg-white transition-all duration-300 ease-in-out"></span>
       </div>
 
       {/* navigation */}
       <div
         onClick={(e) => e.stopPropagation()}
-        className={`${toggle ? "pointer-events-auto visible opacity-100" : "pointer-events-none invisible opacity-0"} absolute right-0 top-[5rem] z-[99999] flex h-auto w-[260px] items-start justify-start overflow-hidden rounded-[1.2rem] transition-all duration-300 ease-in-out`}
+        className={`${toggle ? "pointer-events-auto visible opacity-100" : "pointer-events-none invisible opacity-0"} absolute right-0 top-20 z-[99999] flex h-auto w-[260px] items-start justify-start overflow-hidden rounded-[1.2rem] transition-all duration-300 ease-in-out`}
         style={
           toggle
             ? { transform: "translateX(0)" }
@@ -64,7 +64,7 @@ const Header = ({ projects }) => {
       >
         {/* left nav */}
         <ul
-          className={`${activeRightNav ? "pointer-events-none" : "pointer-events-auto"} h-auto max-h-[400px] min-w-[260px] list-none overflow-y-auto rounded-[1.2rem] border-[1px] border-[#000] bg-[#222] transition-all duration-300 ease-in-out`}
+          className={`${activeRightNav ? "pointer-events-none" : "pointer-events-auto"} h-auto max-h-[400px] min-w-[260px] list-none overflow-y-auto rounded-[1.2rem] border border-black bg-[#222] transition-all duration-300 ease-in-out`}
           style={
             activeRightNav
               ? { transform: "translateX(-100%)" }
@@ -75,30 +75,30 @@ const Header = ({ projects }) => {
             onClick={() => handleGoToRightNav("react")}
             className="flex h-[46px] cursor-pointer items-center justify-between ps-[0.8rem] transition-all duration-300 ease-in-out hover:bg-[#333]"
           >
-            <span className="text-[1.2rem] font-[500]">React Projects</span>
+            <span className="text-[1.2rem] font-medium">React Projects</span>
             <RiArrowDropRightLine className="text-[2rem]" />
           </li>
           <a
             href="https://macroos.vercel.app/"
-            className="flex h-[46px] cursor-pointer items-center justify-between border-t-[1px] border-[#000] ps-[0.8rem] transition-all duration-300 ease-in-out hover:bg-[#333]"
+            className="flex h-[46px] cursor-pointer items-center justify-between border-t border-black ps-[0.8rem] transition-all duration-300 ease-in-out hover:bg-[#333]"
           >
-            <span className="text-[1.2rem] font-[500]">
+            <span className="text-[1.2rem] font-medium">
               JavaScript Projects
             </span>
             <RiArrowDropRightLine className="text-[2rem]" />
           </a>
           <a
             href="https://macroos.vercel.app/"
-            className="flex h-[46px] cursor-pointer items-center justify-between border-t-[1px] border-[#000] ps-[0.8rem] transition-all duration-300 ease-in-out hover:bg-[#333]"
+            className="flex h-[46px] cursor-pointer items-center justify-between border-t border-black ps-[0.8rem] transition-all duration-300 ease-in-out hover:bg-[#333]"
           >
-            <span className="text-[1.2rem] font-[500]">CSS Projects</span>
+            <span className="text-[1.2rem] font-medium">CSS Projects</span>
             <RiArrowDropRightLine className="text-[2rem]" />
           </a>
         </ul>
 
         {/* right nav */}
         <div
-          className={`navRight ${activeRightNav ? "activeRight pointer-events-auto" : "pointer-events-none"} max-h-[400px] min-w-[260px] overflow-y-auto rounded-[1.2rem] border-[1px] border-[#000] bg-[#222] transition-all duration-300 ease-in-out`}
+          className={`navRight ${activeRightNav ? "activeRight pointer-events-auto" : "pointer-events-none"} max-h-[400px] min-w-[260px] overflow-y-auto rounded-[1.2rem] border border-black bg-[#222] transition-all duration-300 ease-in-out`}
           style={
             activeRightNav
               ? { transform: "translateX(-100%)" }
@@ -109,16 +109,16 @@ const Header = ({ projects }) => {
           <ul className={listCategory === "react" ? "block" : "hidden"}>
             <li
               onClick={handleBackToLeftNav}
-              className="flex h-[46px] cursor-pointer items-center justify-start border-b-[1px] border-[#000] bg-[#333]"
+              className="flex h-[46px] cursor-pointer items-center justify-start border-b border-black bg-[#333]"
             >
               <RiArrowDropLeftLine className="text-[2rem]" />
-              <span className="text-[1.2rem] font-[500]">back</span>
+              <span className="text-[1.2rem] font-medium">back</span>
             </li>
 
             {projects.map((project) => {
               return (
-                <Link to={project.link}>
-                  <li className="flex h-[46px] w-full items-center justify-start ps-[0.8rem] text-[1.2rem] font-[500] transition-all duration-300 ease-in-out hover:bg-[#333]">
+                <Link key={project.id} to={project.link}>
+                  <li className="flex h-[46px] w-full items-center justify-start ps-[0.8rem] text-[1.2rem] font-medium transition-all duration-300 ease-in-out hover:bg-[#333]">
                     {project.name}
                   </li>
                 </Link>
