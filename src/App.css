@@ -74,7 +74,3 @@
   visibility: visible;
   pointer-events: auto;
 }
-
-.tags > span {
-  text-shadow: 0.1rem 0.1rem 0.2rem #111;
-}

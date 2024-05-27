@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
     extend: {
+      textShadow: {
+        'custom-shadow': '0.1rem 0.1rem 0.2rem #111',
+      },
       backgroundImage: {
         'clock': 'linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./assets/images/backgrounds/stopwatch-bg.jpg)',
         'stopwatch': 'linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./assets/images/backgrounds/cllock-bg.jpg)',
@@ -37,5 +40,13 @@ export default {
       poppins: ['Poppins', 'sans-serif']
     }
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.text-shadow': {
+          textShadow: '0.1rem 0.1rem 0.2rem #000',
+        },
+      });
+    },
+  ],
 }
