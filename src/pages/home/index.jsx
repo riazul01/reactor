@@ -6,7 +6,7 @@ import { projects } from "./projects";
 
 const Home = () => {
   return (
-    <div className="mx-auto h-auto min-h-screen w-full max-w-[1300px] overflow-x-hidden px-3 font-belanosima text-white">
+    <div className="mx-auto h-auto min-h-screen w-full max-w-[1300px] overflow-x-hidden px-2.5 font-belanosima text-white">
       <Header projects={projects} />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => {
