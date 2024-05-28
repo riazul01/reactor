@@ -15,43 +15,6 @@
   border-radius: 2rem;
 }
 
-.toggleBar::before {
-  position: absolute;
-  content: '';
-  top: -0.7rem;
-  left: 0;
-  height: 3px;
-  width: 32px;
-  background: #fff;
-  transition: all 0.3s ease;
-}
-
-.toggleBar::after {
-  position: absolute;
-  content: '';
-  top: 0.7rem;
-  left: 0;
-  height: 3px;
-  width: 32px;
-  background: #fff;
-  transition: all 0.3s ease;
-}
-
-.toggler.active .toggleBar {
-  background: transparent;
-  transform: rotate(40deg);
-}
-
-.toggler.active .toggleBar::before {
-  transform: rotate(-85deg);
-  top: 0;
-}
-
-.toggler.active .toggleBar::after {
-  transform: rotate(5deg);
-  top: 0;
-}
-
 .project-title:hover ~ .icon-link {
   opacity: 1;
   visibility: visible;

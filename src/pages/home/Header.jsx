@@ -39,7 +39,7 @@ const Header = ({ projects }) => {
       {/* logo */}
       <Link
         to="/"
-        className="before:bg-logo before:text-clipped text-stroke-2 relative ml-[0.4rem] text-[2.4rem] font-bold uppercase text-white no-underline before:absolute before:left-0 before:top-0 before:z-[-1] before:scale-x-110 before:scale-y-[1.15] before:transform before:text-transparent before:content-['REACTOR']"
+        className="relative ml-[0.4rem] text-[2.4rem] font-bold uppercase text-white no-underline text-stroke-2 before:absolute before:left-0 before:top-0 before:z-[-1] before:scale-x-110 before:scale-y-[1.15] before:transform before:bg-logo before:text-transparent before:content-['REACTOR'] before:text-clipped"
       >
         REACTOR
       </Link>
@@ -47,9 +47,11 @@ const Header = ({ projects }) => {
       {/* toggle bar */}
       <div
         onClick={handleNavToggle}
-        className={`toggler ${toggle ? "active" : null} grid h-[46px] w-[54px] cursor-pointer place-items-center rounded-lg`}
+        className="grid h-[46px] w-[54px] cursor-pointer place-items-center rounded-lg"
       >
-        <span className="toggleBar relative h-[3px] w-8 bg-white transition-all duration-300 ease-in-out"></span>
+        <span
+          className={`toggle-bar ${toggle ? "rotate-[40deg] bg-transparent active" : "rotate-0 bg-white"} relative h-[3px] w-8 transform transition-all duration-300 ease-in-out before:absolute before:-top-[0.7rem] before:left-0 before:h-[3px] before:w-8 before:bg-white before:content-[''] after:absolute after:left-0 after:top-[0.7rem] after:h-[3px] after:w-8 after:bg-white after:content-['']`}
+        ></span>
       </div>
 
       {/* navigation */}
@@ -98,7 +100,7 @@ const Header = ({ projects }) => {
 
         {/* right nav */}
         <div
-          className={`navRight ${activeRightNav ? "activeRight pointer-events-auto" : "pointer-events-none"} max-h-[400px] min-w-[260px] overflow-y-auto rounded-[1.2rem] border border-black bg-[#222] transition-all duration-300 ease-in-out`}
+          className={`${activeRightNav ? "pointer-events-auto" : "pointer-events-none"} max-h-[400px] min-w-[260px] overflow-y-auto rounded-[1.2rem] border border-black bg-[#222] transition-all duration-300 ease-in-out`}
           style={
             activeRightNav
               ? { transform: "translateX(-100%)" }

@@ -51,6 +51,20 @@ export default {
         '.text-clipped': {
           '-webkit-background-clip': 'text',
           '-webkit-text-fill-color': 'transparent'
+        },
+        '.toggle-bar::before': {
+          transition: 'all 0.3s ease'
+        },
+        '.toggle-bar::after': {
+          transition: 'all 0.3s ease'
+        },
+        '.toggle-bar.active::before': {
+          transform: 'rotate(-85deg)',
+          top: 0
+        },
+        '.toggle-bar.active::after': {
+          transform: 'rotate(5deg)',
+          top: 0
         }
       });
     },
