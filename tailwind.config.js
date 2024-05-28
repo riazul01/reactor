@@ -65,7 +65,29 @@ export default {
         '.toggle-bar.active::after': {
           transform: 'rotate(5deg)',
           top: 0
-        }
+        },
+        '.project-title:hover ~ .icon-link': {
+          opacity: 1,
+          visibility: 'visible',
+          pointerEvents: 'auto',
+        },
+        '.custom-scrollbar': {
+          '&::-webkit-scrollbar': {
+            width: '5px'
+          },
+          '&::-webkit-scrollbar-thumb': {
+            background: 'linear-gradient(45deg, #4fc624, greenyellow, orange, orangered)',
+            borderRadius: '2rem'
+          },
+          '&::-webkit-scrollbar-track': {
+            background: '#111',
+          },
+          '&.track-darker': {
+            '&::-webkit-scrollbar-track': {
+              background: '#000',
+            },
+          },
+        },
       });
     },
   ],

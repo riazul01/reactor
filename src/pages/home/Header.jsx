@@ -100,7 +100,7 @@ const Header = ({ projects }) => {
 
         {/* right nav */}
         <div
-          className={`${activeRightNav ? "pointer-events-auto" : "pointer-events-none"} max-h-[400px] min-w-[260px] overflow-y-auto rounded-[1.2rem] border border-black bg-[#222] transition-all duration-300 ease-in-out`}
+          className={`custom-scrollbar ${activeRightNav ? "pointer-events-auto" : "pointer-events-none"} max-h-[400px] min-w-[260px] overflow-y-auto rounded-[1.2rem] border border-black bg-[#222] transition-all duration-300 ease-in-out`}
           style={
             activeRightNav
               ? { transform: "translateX(-100%)" }
