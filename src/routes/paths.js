@@ -1,0 +1,15 @@
+export const paths = {
+  root: "/",
+  clock: "/clock",
+  stopwatch: "/stopwatch",
+  todo: "/todo",
+  counter: "/counter",
+  randomColors: "/random-colors",
+  pxToRem: "/px-to-rem",
+  ageCalculator: "/age-calculator",
+  randomPasswordGenerator: "/random-password-generator",
+  algorithms: "/algorithms",
+  rotationCounter: "/rotation-counter",
+  multiplicationTableGenerator: "/multiplication-table-generator",
+  splitScreen: "/split-screen",
+};

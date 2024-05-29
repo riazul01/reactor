@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { paths } from "./routes/paths";
 
 // pages
 import Home from "./pages/home";
@@ -20,25 +21,25 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/clock" element={<Clock />} />
-        <Route path="/stopwatch" element={<Stopwatch />} />
-        <Route path="/todo" element={<Todo />} />
-        <Route path="/counter" element={<Counter />} />
-        <Route path="/random-colors" element={<RandomColors />} />
-        <Route path="/px-to-rem" element={<PxToREM />} />
-        <Route path="/age-calculator" element={<AgeCalculator />} />
+        <Route path={paths.root} element={<Home />} />
+        <Route path={paths.clock} element={<Clock />} />
+        <Route path={paths.stopwatch} element={<Stopwatch />} />
+        <Route path={paths.todo} element={<Todo />} />
+        <Route path={paths.counter} element={<Counter />} />
+        <Route path={paths.randomColors} element={<RandomColors />} />
+        <Route path={paths.pxToRem} element={<PxToREM />} />
+        <Route path={paths.ageCalculator} element={<AgeCalculator />} />
         <Route
-          path="/random-password-generator"
+          path={paths.randomPasswordGenerator}
           element={<PasswordGenerator />}
         />
-        <Route path="/algorithms" element={<Algorithms />} />
-        <Route path="/rotation-counter" element={<RotationCounter />} />
+        <Route path={paths.algorithms} element={<Algorithms />} />
+        <Route path={paths.rotationCounter} element={<RotationCounter />} />
         <Route
-          path="/multiplication-table-generator"
+          path={paths.multiplicationTableGenerator}
           element={<MultiplicationTableGenerator />}
         />
-        <Route path="/split-screen" element={<SplitScreen />} />
+        <Route path={paths.splitScreen} element={<SplitScreen />} />
       </Routes>
     </BrowserRouter>
   );
