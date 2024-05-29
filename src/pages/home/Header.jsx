@@ -118,10 +118,14 @@ const Header = ({ projects }) => {
             </li>
 
             {projects.map((project) => {
+              const projectName = project.name;
+              const nameAra = projectName.split(" ");
               return (
                 <Link key={project.id} to={project.link}>
                   <li className="flex h-[46px] w-full items-center justify-start ps-[0.8rem] text-[1.2rem] font-medium transition-all duration-300 ease-in-out hover:bg-[#333]">
-                    {project.name}
+                    {projectName.length > 24
+                      ? [nameAra[0], nameAra[1]].join(" ")
+                      : projectName}
                   </li>
                 </Link>
               );
