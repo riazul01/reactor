@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        'spin-slow': 'spin 1s linear infinite',
+      },
       backgroundImage: {
         'logo': 'linear-gradient(45deg, orangered, #4fc624)',
         'clock': 'linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./assets/images/backgrounds/clock-bg.jpg)',
@@ -70,6 +73,9 @@ export default {
           opacity: 1,
           visibility: 'visible',
           pointerEvents: 'auto',
+        },
+        '.clip-hexagon': {
+          clipPath: 'polygon(0 0, 70% 0, 100% 30%, 100% 100%, 30% 100%, 0 70%)',
         },
         '.custom-scrollbar': {
           '&::-webkit-scrollbar': {
