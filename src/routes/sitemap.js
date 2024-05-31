@@ -14,7 +14,7 @@ import AlgorithmsImage from "/src/assets/images/thumbs/algorithms.png";
 import RotationCounterImage from "/src/assets/images/thumbs/rotation-counter.png";
 import MultiplicationTableImage from "/src/assets/images/thumbs/multiplication-table.png";
 
-export const projects = [
+export const sitemap = [
   {
     id: 1,
     name: "Digital Clock",
