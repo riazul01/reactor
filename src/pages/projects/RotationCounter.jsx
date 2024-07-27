@@ -81,7 +81,7 @@ const RotationCounter = () => {
       </div>
       <button
         onClick={handleRotationStart}
-        className={`fixed bottom-24 left-[50%] w-28 translate-x-[-50%] rounded-sm ${start ? "bg-red-800" : "bg-green-800"} py-3 text-base font-medium uppercase text-white`}
+        className={`fixed bottom-40 left-[50%] w-28 translate-x-[-50%] rounded-sm ${start ? "bg-red-800" : "bg-green-800"} py-3 text-base font-medium uppercase text-white`}
       >
         {start ? "Stop" : "Start"}
       </button>
