@@ -10,7 +10,11 @@ export default {
   theme: {
     extend: {
       animation: {
-        'spin-slow': 'spin 1s linear infinite',
+        'spin-slower': 'spin 1s linear infinite',
+        'spin-slow': 'spin 0.75s linear infinite',
+        'spin-medium': 'spin 0.5s linear infinite',
+        'spin-fast': 'spin 0.25s linear infinite',
+        'spin-faster': 'spin 0.1s linear infinite',
       },
       backgroundImage: {
         'logo': 'linear-gradient(45deg, orangered, #4fc624)',
